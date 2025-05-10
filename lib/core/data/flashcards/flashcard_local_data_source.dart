@@ -1,17 +1,29 @@
-import 'package:myapp/core/clients/sqlite/sqlite_client.dart';
-import 'package:myapp/core/data/flashcards/models/flashcard_model.dart'
-    show Flashcard;
+import 'dart:convert';
+
+import 'package:flutter/services.dart';
+import 'package:taidamTutor/core/data/flashcards/models/flashcard_model.dart';
 
 class FlashcardLocalDataSource {
-  final SqliteClient _client;
+  final _flashcards = <Flashcard>[];
 
-  FlashcardLocalDataSource()
-    : _client = SqliteClient('assets/data/MojoDatabase.sqlite3');
+  FlashcardLocalDataSource();
 
-  Future<void> saveFlashcard(Flashcard flashcard) {
-    throw UnimplementedError();
+  Future<void> init() async {
+    final jsonString =
+        await rootBundle.loadString('assets/data/character.json');
+    final List<dynamic> jsonList = json.decode(jsonString);
+    _flashcards.addAll(
+      jsonList.map((json) => Flashcard.fromJson(json)).toList(),
+    );
   }
 
-  Future<List<Flashcard>> getFlashcards() => throw UnimplementedError();
-  Future<void> deleteFlashcard(String id) => throw UnimplementedError();
+  void saveFlashcard(Flashcard flashcard) {
+    if (_flashcards.any((fc) => fc == flashcard)) {
+      return;
+    }
+  }
+
+  List<Flashcard> getFlashcards() => _flashcards;
+
+  void deleteFlashcard(Flashcard flashcard) => _flashcards.remove(flashcard);
 }
