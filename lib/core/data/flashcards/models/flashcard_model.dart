@@ -1,28 +1,51 @@
 // lib/models/flashcard_models.dart
 
-/// Represents a single flashcard with Tai Dam character, pronunciation, and example.
-class Flashcard {
-  final int characterId; // ": 1,
-  final String character; // ": "ꪀ",
-  final String audioFile; // ": "a1",
-  final String imageName; // ": "a1",
-  final String svg; // ": "a1",
-  final int characterType; // ": 1,
-  final String highLow; // ": "low",
-  final String sound; // ": "k",
-  final String cardWord; // ": "ꪼꪀ",
-  final String cardWordMeaning; // ": "chicken",
-  final String? prePost; // ": "",
-  final String? vowelWordFile;
+import 'package:equatable/equatable.dart';
+import 'package:json_annotation/json_annotation.dart';
 
-  Flashcard({
+part 'flashcard_model.g.dart';
+
+/// Represents a flashcard with an image, word, and its meaning.
+@JsonSerializable(explicitToJson: true)
+class Flashcard extends Equatable {
+  /// Unique identifier for the flashcard
+  final String flashcardId;
+
+  /// image that represents the card word meaning
+  final String imageName;
+
+  /// characters that comprise the card word
+  final String cardWord;
+
+  /// English meaning of the card word
+  final String cardWordMeaning;
+
+  /// File name of the card word's audio file
+  @JsonKey(name: "vowelWordFile")
+  final String? audioFile;
+
+  /// Constructor for the Flashcard class.
+  const Flashcard({
+    required this.flashcardId,
+    required this.imageName,
+    required this.cardWord,
+    required this.cardWordMeaning,
+    this.audioFile,
   });
-}
 
-/// Represents a deck of flashcards.
-class FlashcardDeck {
-  final String name;
-  final List<Flashcard> flashcards;
+  /// Creates a Flashcard instance from a JSON object.
+  factory Flashcard.fromJson(Map<String, dynamic> json) =>
+      _$FlashcardFromJson(json);
 
-  FlashcardDeck({required this.name, required this.flashcards});
+  /// Creates a Flashcard instance from a JSON object.
+  Map<String, dynamic> toJson() => _$FlashcardToJson(this);
+
+  @override
+  List<Object?> get props => [
+        flashcardId,
+        imageName,
+        cardWord,
+        cardWordMeaning,
+        audioFile,
+      ];
 }
