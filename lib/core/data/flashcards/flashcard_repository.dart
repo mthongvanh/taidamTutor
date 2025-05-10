@@ -1,4 +1,4 @@
-import 'package:taidamTutor/core/data/flashcards/flashcard_local_data_source.dart';
+import 'package:taidam_tutor/core/data/flashcards/flashcard_local_data_source.dart';
 
 import 'models/flashcard_model.dart';
 

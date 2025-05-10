@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:taidamTutor/core/data/flashcards/models/flashcard_model.dart';
+import 'package:taidam_tutor/core/data/flashcards/models/flashcard_model.dart';
 
 class FlashcardLocalDataSource {
   final _flashcards = <Flashcard>[];

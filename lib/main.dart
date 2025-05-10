@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:taidam_tutor/core/di/dependency_manager.dart';
 
-void main() {
+void main() async {
+  DependencyManager().registerDependencies();
   runApp(const MyApp());
 }
 
