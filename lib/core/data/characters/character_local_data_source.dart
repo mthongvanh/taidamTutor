@@ -13,7 +13,7 @@ class CharacterLocalDataSource {
 
     try {
       final String jsonString =
-          await rootBundle.loadString('assets/data/characters.json');
+          await rootBundle.loadString('assets/data/character.json');
       final List<dynamic> jsonList = json.decode(jsonString);
       _characters = jsonList.map((json) => Character.fromJson(json)).toList();
       _isInitialized = true;

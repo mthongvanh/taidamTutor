@@ -1,15 +1,37 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:taidam_tutor/core/data/characters/character_repository.dart';
 import 'package:taidam_tutor/core/di/dependency_manager.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   DependencyManager().registerDependencies();
-  runApp(const MyApp());
+  runApp(BlocProvider<AppCubit>(
+    create: (context) => AppCubit(),
+    child: const App(),
+  ));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class AppCubit extends Cubit<bool> {
+  final _characterRepository = dm.get<CharacterRepository>();
 
-  // This widget is the root of your application.
+  AppCubit() : super(false) {
+    init();
+  }
+
+  void init() {
+    _characterRepository.getCharacters().then((value) {
+      // Do something with the characters
+      emit(true);
+    }).catchError((error) {
+      emit(false);
+    });
+  }
+}
+
+class App extends StatelessWidget {
+  const App({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

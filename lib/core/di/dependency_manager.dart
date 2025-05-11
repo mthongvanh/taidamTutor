@@ -12,9 +12,13 @@ class DependencyManager {
   DependencyManager._internal();
 
   void registerDependencies() {
-    GetIt.I.registerLazySingleton<FlashcardRepository>(
-        () => FlashcardRepository());
-    GetIt.I.registerLazySingleton<CharacterRepository>(
-        () => CharacterRepository());
+    GetIt.I.registerSingleton<FlashcardRepository>(FlashcardRepository());
+    GetIt.I.registerSingleton<CharacterRepository>(CharacterRepository());
+  }
+
+  T get<T extends Object>() {
+    return GetIt.I<T>();
   }
 }
+
+DependencyManager dm = DependencyManager();

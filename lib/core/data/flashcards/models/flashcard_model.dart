@@ -8,9 +8,6 @@ part 'flashcard_model.g.dart';
 /// Represents a flashcard with an image, word, and its meaning.
 @JsonSerializable(explicitToJson: true)
 class Flashcard extends Equatable {
-  /// Unique identifier for the flashcard
-  final String flashcardId;
-
   /// image that represents the card word meaning
   final String imageName;
 
@@ -21,12 +18,11 @@ class Flashcard extends Equatable {
   final String cardWordMeaning;
 
   /// File name of the card word's audio file
-  @JsonKey(name: "vowelWordFile")
+  @JsonKey(name: "cardWordAudio")
   final String? audioFile;
 
   /// Constructor for the Flashcard class.
   const Flashcard({
-    required this.flashcardId,
     required this.imageName,
     required this.cardWord,
     required this.cardWordMeaning,
@@ -42,7 +38,6 @@ class Flashcard extends Equatable {
 
   @override
   List<Object?> get props => [
-        flashcardId,
         imageName,
         cardWord,
         cardWordMeaning,

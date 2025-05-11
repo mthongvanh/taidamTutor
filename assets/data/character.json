@@ -11,7 +11,7 @@
     "cardWord": "ꪼꪀ",
     "cardWordMeaning": "chicken",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a1"
   },
   {
     "characterId": 2,
@@ -25,7 +25,7 @@
     "cardWord": "ꪁꪮꪉ",
     "cardWordMeaning": "gong",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a2"
   },
   {
     "characterId": 3,
@@ -39,7 +39,7 @@
     "cardWord": "ꪀꪲꪙ",
     "cardWordMeaning": "eat",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a3"
   },
   {
     "characterId": 4,
@@ -53,7 +53,7 @@
     "cardWord": "ꪁꪲꪣ",
     "cardWordMeaning": "pliers",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a4"
   },
   {
     "characterId": 5,
@@ -67,7 +67,7 @@
     "cardWord": "ꪀꪫꪱꪉ",
     "cardWordMeaning": "deer",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a5"
   },
   {
     "characterId": 6,
@@ -81,7 +81,7 @@
     "cardWord": "ꪁꪫꪱꪤ",
     "cardWordMeaning": "water buffalo",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a6"
   },
   {
     "characterId": 7,
@@ -95,7 +95,7 @@
     "cardWord": "ꪶꪄꪙ",
     "cardWordMeaning": "feather",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a7"
   },
   {
     "characterId": 8,
@@ -109,7 +109,7 @@
     "cardWord": "ꪅꪺꪀ",
     "cardWordMeaning": "tadpole",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a8"
   },
   {
     "characterId": 9,
@@ -123,7 +123,7 @@
     "cardWord": "ꪄꪫꪱꪙ",
     "cardWordMeaning": "axe",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a9"
   },
   {
     "characterId": 10,
@@ -137,7 +137,7 @@
     "cardWord": "ꪈꪾ",
     "cardWordMeaning": "to think",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a10"
   },
   {
     "characterId": 11,
@@ -151,7 +151,7 @@
     "cardWord": "ꪉꪴ",
     "cardWordMeaning": "snake",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a11"
   },
   {
     "characterId": 12,
@@ -165,7 +165,7 @@
     "cardWord": "ꪊꪜ",
     "cardWordMeaning": "hoe",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a12"
   },
   {
     "characterId": 13,
@@ -179,7 +179,7 @@
     "cardWord": "ꪋꪱꪉ",
     "cardWordMeaning": "elephant",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a13"
   },
   {
     "characterId": 14,
@@ -193,7 +193,7 @@
     "cardWord": "ꪼꪎ",
     "cardWordMeaning": "egg",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a14"
   },
   {
     "characterId": 15,
@@ -207,7 +207,7 @@
     "cardWord": "ꪼꪏ",
     "cardWordMeaning": "fish trap",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a15"
   },
   {
     "characterId": 16,
@@ -221,7 +221,7 @@
     "cardWord": "ꪹꪐꪸꪙ",
     "cardWordMeaning": "otter",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a16"
   },
   {
     "characterId": 17,
@@ -235,7 +235,7 @@
     "cardWord": "ꪚꪴꪉ",
     "cardWordMeaning": "mosquito",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a17"
   },
   {
     "characterId": 18,
@@ -249,7 +249,7 @@
     "cardWord": "ꪒꪴꪀ",
     "cardWordMeaning": "bone",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a18"
   },
   {
     "characterId": 19,
@@ -263,7 +263,7 @@
     "cardWord": "ꪓ",
     "cardWordMeaning": "letter D",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a19"
   },
   {
     "characterId": 20,
@@ -277,7 +277,7 @@
     "cardWord": "ꪔꪷꪉ",
     "cardWordMeaning": "stool",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a20"
   },
   {
     "characterId": 21,
@@ -291,7 +291,7 @@
     "cardWord": "ꪕꪱꪉ",
     "cardWordMeaning": "path",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a21"
   },
   {
     "characterId": 22,
@@ -305,7 +305,7 @@
     "cardWord": "ꪖꪷ",
     "cardWordMeaning": "rabbit",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a22"
   },
   {
     "characterId": 23,
@@ -319,7 +319,7 @@
     "cardWord": "ꪗꪴꪉ",
     "cardWordMeaning": "bucket",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a23"
   },
   {
     "characterId": 24,
@@ -333,7 +333,7 @@
     "cardWord": "ꪘꪴ",
     "cardWordMeaning": "rat",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a24"
   },
   {
     "characterId": 25,
@@ -347,7 +347,7 @@
     "cardWord": "ꪶꪙꪀ",
     "cardWordMeaning": "bird",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a25"
   },
   {
     "characterId": 26,
@@ -361,7 +361,7 @@
     "cardWord": "ꪚꪱꪉ",
     "cardWordMeaning": "flying squirrel",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a26"
   },
   {
     "characterId": 27,
@@ -375,7 +375,7 @@
     "cardWord": "ꪛꪱ ꪜꪺ",
     "cardWordMeaning": "king",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a27"
   },
   {
     "characterId": 28,
@@ -389,7 +389,7 @@
     "cardWord": "ꪜꪱ",
     "cardWordMeaning": "fish",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a28"
   },
   {
     "characterId": 29,
@@ -403,7 +403,7 @@
     "cardWord": "ꪝꪱꪴ",
     "cardWordMeaning": "coconut",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a29"
   },
   {
     "characterId": 30,
@@ -417,7 +417,7 @@
     "cardWord": "ꪠꪱ",
     "cardWordMeaning": "turtle",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a30"
   },
   {
     "characterId": 31,
@@ -431,7 +431,7 @@
     "cardWord": "ꪼꪡ",
     "cardWordMeaning": "fire",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a31"
   },
   {
     "characterId": 32,
@@ -445,7 +445,7 @@
     "cardWord": "ꪢꪱ",
     "cardWordMeaning": "dog",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a32"
   },
   {
     "characterId": 33,
@@ -459,7 +459,7 @@
     "cardWord": "ꪵꪣꪫ",
     "cardWordMeaning": "cat",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a33"
   },
   {
     "characterId": 34,
@@ -473,7 +473,7 @@
     "cardWord": "ꪤꪸꪙ",
     "cardWordMeaning": "eel",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a34"
   },
   {
     "characterId": 35,
@@ -487,7 +487,7 @@
     "cardWord": "ꪥꪷ",
     "cardWordMeaning": "sheep",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a35"
   },
   {
     "characterId": 36,
@@ -501,7 +501,7 @@
     "cardWord": "ꪨꪱꪙ",
     "cardWordMeaning": "grandchild",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a36"
   },
   {
     "characterId": 37,
@@ -515,7 +515,7 @@
     "cardWord": "ꪩꪲꪉ",
     "cardWordMeaning": "monkey",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a37"
   },
   {
     "characterId": 38,
@@ -529,7 +529,7 @@
     "cardWord": "ꪵꪪꪙ ꪣꪳ",
     "cardWordMeaning": "ring",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a38"
   },
   {
     "characterId": 39,
@@ -543,7 +543,7 @@
     "cardWord": "ꪵꪪꪙ ꪔꪱ",
     "cardWordMeaning": "eye glasses",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a39"
   },
   {
     "characterId": 40,
@@ -557,7 +557,7 @@
     "cardWord": "ꪵꪬ",
     "cardWordMeaning": "fishnet",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a40"
   },
   {
     "characterId": 41,
@@ -571,7 +571,7 @@
     "cardWord": "ꪭꪮꪀ",
     "cardWordMeaning": "squirrel",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a41"
   },
   {
     "characterId": 42,
@@ -585,7 +585,7 @@
     "cardWord": "ꪮꪱꪉ",
     "cardWordMeaning": "water basin",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a42"
   },
   {
     "characterId": 43,
@@ -599,7 +599,7 @@
     "cardWord": "ꪹꪯꪸꪣ",
     "cardWordMeaning": "mother",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a43"
   },
   {
     "characterId": 44,
@@ -613,7 +613,7 @@
     "cardWord": "ꫛ",
     "cardWordMeaning": "person",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a44"
   },
   {
     "characterId": 45,
@@ -627,7 +627,7 @@
     "cardWord": "ꫜ",
     "cardWordMeaning": "one",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a45"
   },
   {
     "characterId": 46,
@@ -641,7 +641,7 @@
     "cardWord": "ꪒꪴꪀ",
     "cardWordMeaning": "bone",
     "prePost": "",
-    "vowelWordFile": ""
+    "cardWordAudio": "a18"
   },
   {
     "characterId": 48,
@@ -655,7 +655,7 @@
     "cardWord": "ꪔꪱ",
     "cardWordMeaning": "eye",
     "prePost": "post",
-    "vowelWordFile": "b48b-word"
+    "cardWordAudio": "b48b-word"
   },
   {
     "characterId": 49,
@@ -669,7 +669,7 @@
     "cardWord": "ꪢꪲ",
     "cardWordMeaning": "bear",
     "prePost": "post",
-    "vowelWordFile": "b51a-word"
+    "cardWordAudio": "b51a-word"
   },
   {
     "characterId": 50,
@@ -683,7 +683,7 @@
     "cardWord": "ꪢꪴ",
     "cardWordMeaning": "pig",
     "prePost": "post",
-    "vowelWordFile": "b54a-word"
+    "cardWordAudio": "b54a-word"
   },
   {
     "characterId": 51,
@@ -697,7 +697,7 @@
     "cardWord": "ꪣꪳ",
     "cardWordMeaning": "hand",
     "prePost": "post",
-    "vowelWordFile": "b57a-word"
+    "cardWordAudio": "b57a-word"
   },
   {
     "characterId": 52,
@@ -711,7 +711,7 @@
     "cardWord": "ꪌꪸ",
     "cardWordMeaning": "paper",
     "prePost": "post",
-    "vowelWordFile": "b59b-word"
+    "cardWordAudio": "b59b-word"
   },
   {
     "characterId": 53,
@@ -725,7 +725,7 @@
     "cardWord": "ꪢꪷ",
     "cardWordMeaning": "pot",
     "prePost": "post",
-    "vowelWordFile": "b61c-word"
+    "cardWordAudio": "b61c-word"
   },
   {
     "characterId": 54,
@@ -739,7 +739,7 @@
     "cardWord": "ꪬꪺ",
     "cardWordMeaning": "head",
     "prePost": "post",
-    "vowelWordFile": "b64a-word"
+    "cardWordAudio": "b64a-word"
   },
   {
     "characterId": 55,
@@ -753,7 +753,7 @@
     "cardWord": "ꪶꪁ ꪼꪣ",
     "cardWordMeaning": "log",
     "prePost": "pre",
-    "vowelWordFile": "b67b-word"
+    "cardWordAudio": "b67b-word"
   },
   {
     "characterId": 56,
@@ -767,7 +767,7 @@
     "cardWord": "ꪼꪡ",
     "cardWordMeaning": "fire",
     "prePost": "pre",
-    "vowelWordFile": "b69a-word"
+    "cardWordAudio": "b69a-word"
   },
   {
     "characterId": 57,
@@ -781,7 +781,7 @@
     "cardWord": "ꪻꪚ",
     "cardWordMeaning": "leaf",
     "prePost": "pre",
-    "vowelWordFile": "b70a-word"
+    "cardWordAudio": "b70a-word"
   },
   {
     "characterId": 58,
@@ -795,7 +795,7 @@
     "cardWord": "ꪣ",
     "cardWordMeaning": "water",
     "prePost": "post",
-    "vowelWordFile": "b72a-word"
+    "cardWordAudio": "b72a-word"
   },
   {
     "characterId": 59,
@@ -809,7 +809,7 @@
     "cardWord": "ꪜꪽ",
     "cardWordMeaning": "squeeze",
     "prePost": "post",
-    "vowelWordFile": "b73b-word"
+    "cardWordAudio": "b73b-word"
   },
   {
     "characterId": 60,
@@ -823,7 +823,7 @@
     "cardWord": "ꪵꪚ",
     "cardWordMeaning": "goat",
     "prePost": "pre",
-    "vowelWordFile": "b75b-word"
+    "cardWordAudio": "b75b-word"
   },
   {
     "characterId": 61,
@@ -837,7 +837,7 @@
     "cardWord": "ꪹꪎ",
     "cardWordMeaning": "tiger",
     "prePost": "pre",
-    "vowelWordFile": "b78a-word"
+    "cardWordAudio": "b78a-word"
   },
   {
     "characterId": 62,
@@ -851,7 +851,7 @@
     "cardWord": "ꪹꪠꪷꪉ",
     "cardWordMeaning": "bee",
     "prePost": "pre",
-    "vowelWordFile": "b81c-word"
+    "cardWordAudio": "b81c-word"
   },
   {
     "characterId": 63,
@@ -865,7 +865,7 @@
     "cardWord": "ꪹꪜꪸ",
     "cardWordMeaning": "carry",
     "prePost": "pre",
-    "vowelWordFile": "b82a-word"
+    "cardWordAudio": "b82a-word"
   },
   {
     "characterId": 64,
@@ -879,6 +879,6 @@
     "cardWord": "ꪹꪁꪱ",
     "cardWordMeaning": "owl",
     "prePost": "pre",
-    "vowelWordFile": "b84b-word"
+    "cardWordAudio": "b84b-word"
   }
 ]
