@@ -105,67 +105,84 @@ class LetterGrid extends StatelessWidget {
             cellSize = cellSize < 30.0 ? 30.0 : cellSize;
             double fontSize = cellSize * 0.4;
 
-            return Center(
-              child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: state.grid.asMap().entries.map((rowEntry) {
-                      int rowIndex = rowEntry.key;
-                      List<GridCell> row = rowEntry.value;
-                      return Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: row.asMap().entries.map((cellEntry) {
-                          int colIndex = cellEntry.key;
-                          GridCell cell = cellEntry.value;
-                          Color backgroundColor;
-                          if (cell.isTarget && cell.isRevealed) {
-                            backgroundColor = Colors.green.shade400;
-                          } else {
-                            backgroundColor = Colors.blueAccent.shade100;
-                          }
-
-                          return GestureDetector(
-                            onTap: () {
-                              // Check if the game is already won to prevent interaction
-                              if (context
-                                  .read<LetterSearchCubit>()
-                                  .state
-                                  .gameWon) {
-                                return;
-                              }
-                              context
-                                  .read<LetterSearchCubit>()
-                                  .cellTapped(rowIndex, colIndex);
-                            },
-                            child: Container(
-                              margin: const EdgeInsets.all(2.0),
-                              width: cellSize,
-                              height: cellSize,
-                              alignment: Alignment.center,
-                              decoration: BoxDecoration(
-                                color: backgroundColor,
-                                borderRadius: BorderRadius.circular(4.0),
-                                border: Border.all(
-                                    color: Colors.black26, width: 0.5),
-                              ),
-                              child: Text(
-                                cell.letter,
-                                style: TextStyle(
-                                  color: Colors.black87,
-                                  fontSize: fontSize,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                          );
-                        }).toList(),
-                      );
-                    }).toList(),
+            return Column(
+              children: [
+                Center(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      '${state.targetLetter?.character ?? ''} sounds like \'${state.targetLetter?.sound ?? ''}\'',
+                      style: const TextStyle(
+                        fontSize: 30,
+                      ),
+                    ),
                   ),
                 ),
-              ),
+                Expanded(
+                  child: Center(
+                    child: SingleChildScrollView(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: state.grid.asMap().entries.map((rowEntry) {
+                            int rowIndex = rowEntry.key;
+                            List<GridCell> row = rowEntry.value;
+                            return Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: row.asMap().entries.map((cellEntry) {
+                                int colIndex = cellEntry.key;
+                                GridCell cell = cellEntry.value;
+                                Color backgroundColor;
+                                if (cell.isTarget && cell.isRevealed) {
+                                  backgroundColor = Colors.green.shade400;
+                                } else {
+                                  backgroundColor = Colors.blueAccent.shade100;
+                                }
+
+                                return GestureDetector(
+                                  onTap: () {
+                                    // Check if the game is already won to prevent interaction
+                                    if (context
+                                        .read<LetterSearchCubit>()
+                                        .state
+                                        .gameWon) {
+                                      return;
+                                    }
+                                    context
+                                        .read<LetterSearchCubit>()
+                                        .cellTapped(rowIndex, colIndex);
+                                  },
+                                  child: Container(
+                                    margin: const EdgeInsets.all(2.0),
+                                    width: cellSize,
+                                    height: cellSize,
+                                    alignment: Alignment.center,
+                                    decoration: BoxDecoration(
+                                      color: backgroundColor,
+                                      borderRadius: BorderRadius.circular(4.0),
+                                      border: Border.all(
+                                          color: Colors.black26, width: 0.5),
+                                    ),
+                                    child: Text(
+                                      cell.letter,
+                                      style: TextStyle(
+                                        color: Colors.black87,
+                                        fontSize: fontSize,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ),
+                                );
+                              }).toList(),
+                            );
+                          }).toList(),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             );
           },
         ),

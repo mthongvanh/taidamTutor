@@ -1,11 +1,15 @@
 import 'dart:math';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:taidam_tutor/core/data/characters/character_repository.dart';
 import 'package:taidam_tutor/core/data/characters/models/character.dart';
+import 'package:taidam_tutor/core/di/dependency_manager.dart';
 import 'package:taidam_tutor/feature/letter_search/cubit/letter_search_state.dart';
 import 'package:taidam_tutor/feature/letter_search/widgets/letter_grid/core/data/models/grid_cell.dart';
 
 class LetterSearchCubit extends Cubit<LetterSearchState> {
+  final _characterRepository = dm.get<CharacterRepository>();
   final Random _random = Random();
 
   late Character _currentTargetLetter;
@@ -16,8 +20,8 @@ class LetterSearchCubit extends Cubit<LetterSearchState> {
 
   void initializeGrid({
     required int size,
-    required Character targetLetter,
-    required List<Character> allowedLettersInput,
+    // required Character targetLetter,
+    // required List<Character> allowedLettersInput,
   }) {
     emit(state.copyWith(
         isLoading: true,
@@ -26,103 +30,119 @@ class LetterSearchCubit extends Cubit<LetterSearchState> {
         clearErrorMessage: true,
         grid: []));
 
-    if (size < 5) {
-      emit(state.copyWith(
-          isLoading: false, errorMessage: "Grid size must be at least 5x5."));
-      return;
-    }
+    _characterRepository.getCharacters().then((value) {
+      debugPrint('Characters loaded: $value');
+      final targetLetter = value[Random().nextInt(value.length)];
+      final randomAllowedLetters =
+          value.where(((e) => e != targetLetter)).toList();
 
-    final String upperTargetLetter =
-        targetLetter.character.trim().toUpperCase();
-    // if (upperTargetLetter.isEmpty || upperTargetLetter.length > 1) {
-    if (upperTargetLetter.isEmpty) {
-      emit(state.copyWith(
-          isLoading: false,
-          errorMessage: "Target letter must be a single character."));
-      return;
-    }
+      randomAllowedLetters.shuffle();
+      final allowedLetters = randomAllowedLetters.take(4).toList();
+      allowedLetters.add(targetLetter);
 
-    if (allowedLettersInput.isEmpty) {
-      emit(state.copyWith(
-          isLoading: false,
-          errorMessage: "Allowed letters list cannot be empty."));
-      return;
-    }
-
-    final uniqueAllowedLetters = allowedLettersInput
-        .map((e) => e.character.trim().toUpperCase())
-        .where((e) => e.isNotEmpty)
-        .toSet()
-        .toList();
-
-    if (uniqueAllowedLetters.isEmpty) {
-      emit(state.copyWith(
-          isLoading: false,
-          errorMessage:
-              "Allowed letters list is empty after processing. Please provide valid letters."));
-      return;
-    }
-
-    if (!uniqueAllowedLetters.contains(upperTargetLetter)) {
-      emit(state.copyWith(
-          isLoading: false,
-          errorMessage:
-              "Target letter '$upperTargetLetter' must be in the list of allowed letters: ${uniqueAllowedLetters.join(', ')}."));
-      return;
-    }
-
-    _currentGridSize = size;
-    _currentTargetLetter = targetLetter;
-    _currentAllowedLetters = allowedLettersInput;
-
-    final totalCells = size * size;
-    const minOccurrences = 5;
-
-    if (uniqueAllowedLetters.length * minOccurrences > totalCells) {
-      emit(state.copyWith(
-        isLoading: false,
-        gridSize: size,
-        targetLetter: targetLetter,
-        errorMessage:
-            "Not enough cells for ${uniqueAllowedLetters.length} unique letters (each needing $minOccurrences spots) in a ${size}x$size grid. Total cells: $totalCells, Minimum required: ${uniqueAllowedLetters.length * minOccurrences}.",
-      ));
-      return;
-    }
-
-    List<String> lettersPool = [];
-    for (var letter in uniqueAllowedLetters) {
-      for (int i = 0; i < minOccurrences; i++) {
-        lettersPool.add(letter);
+      if (size < 5) {
+        emit(state.copyWith(
+            isLoading: false, errorMessage: "Grid size must be at least 5x5."));
+        return;
       }
-    }
 
-    int remainingCells = totalCells - lettersPool.length;
-    for (int i = 0; i < remainingCells; i++) {
-      lettersPool.add(uniqueAllowedLetters[i % uniqueAllowedLetters.length]);
-    }
+      final String upperTargetLetter =
+          targetLetter.character.trim().toUpperCase();
+      // if (upperTargetLetter.isEmpty || upperTargetLetter.length > 1) {
+      if (upperTargetLetter.isEmpty) {
+        emit(state.copyWith(
+            isLoading: false,
+            errorMessage: "Target letter must be a single character."));
+        return;
+      }
 
-    lettersPool.shuffle(_random);
+      if (allowedLetters.isEmpty) {
+        emit(state.copyWith(
+            isLoading: false,
+            errorMessage: "Allowed letters list cannot be empty."));
+        return;
+      }
 
-    final newGrid = List.generate(
-      size,
-      (row) => List.generate(size, (col) {
-        final letter = lettersPool[row * size + col];
-        return GridCell(
-          letter: letter,
-          isTarget: letter == upperTargetLetter,
-          isRevealed: false,
-        );
-      }),
-    );
+      final uniqueAllowedLetters = allowedLetters
+          .map((e) => e.character.trim().toUpperCase())
+          .where((e) => e.isNotEmpty)
+          .toSet()
+          .toList();
 
-    emit(state.copyWith(
-      grid: newGrid,
-      targetLetter: targetLetter,
-      gridSize: size,
-      isLoading: false,
-      errorMessage: null,
-      clearErrorMessage: true,
-    ));
+      if (uniqueAllowedLetters.isEmpty) {
+        emit(state.copyWith(
+            isLoading: false,
+            errorMessage:
+                "Allowed letters list is empty after processing. Please provide valid letters."));
+        return;
+      }
+
+      if (!uniqueAllowedLetters.contains(upperTargetLetter)) {
+        emit(state.copyWith(
+            isLoading: false,
+            errorMessage:
+                "Target letter '$upperTargetLetter' must be in the list of allowed letters: ${uniqueAllowedLetters.join(', ')}."));
+        return;
+      }
+
+      _currentGridSize = size;
+      _currentTargetLetter = targetLetter;
+      _currentAllowedLetters = allowedLetters;
+
+      final totalCells = size * size;
+      const minOccurrences = 5;
+
+      if (uniqueAllowedLetters.length * minOccurrences > totalCells) {
+        emit(state.copyWith(
+          isLoading: false,
+          gridSize: size,
+          targetLetter: targetLetter,
+          errorMessage:
+              "Not enough cells for ${uniqueAllowedLetters.length} unique letters (each needing $minOccurrences spots) in a ${size}x$size grid. Total cells: $totalCells, Minimum required: ${uniqueAllowedLetters.length * minOccurrences}.",
+        ));
+        return;
+      }
+
+      List<String> lettersPool = [];
+      for (var letter in uniqueAllowedLetters) {
+        for (int i = 0; i < minOccurrences; i++) {
+          lettersPool.add(letter);
+        }
+      }
+
+      int remainingCells = totalCells - lettersPool.length;
+      for (int i = 0; i < remainingCells; i++) {
+        lettersPool.add(uniqueAllowedLetters[i % uniqueAllowedLetters.length]);
+      }
+
+      lettersPool.shuffle(_random);
+
+      final newGrid = List.generate(
+        size,
+        (row) => List.generate(size, (col) {
+          final letter = lettersPool[row * size + col];
+          return GridCell(
+            letter: letter,
+            isTarget: letter == upperTargetLetter,
+            isRevealed: false,
+          );
+        }),
+      );
+
+      emit(state.copyWith(
+        grid: newGrid,
+        targetLetter: targetLetter,
+        gridSize: size,
+        isLoading: false,
+        errorMessage: null,
+        clearErrorMessage: true,
+      ));
+    }).catchError((error) {
+      emit(state.copyWith(
+          isLoading: false,
+          errorMessage: "Error loading characters: $error",
+          clearErrorMessage: true));
+    });
   }
 
   void cellTapped(int row, int col) {
@@ -166,8 +186,6 @@ class LetterSearchCubit extends Cubit<LetterSearchState> {
     if (_currentGridSize >= 5 && _currentAllowedLetters.isNotEmpty) {
       initializeGrid(
         size: _currentGridSize,
-        targetLetter: _currentTargetLetter,
-        allowedLettersInput: _currentAllowedLetters,
       );
     } else {
       emit(state.copyWith(

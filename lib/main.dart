@@ -1,8 +1,5 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:taidam_tutor/core/data/characters/character_repository.dart';
 import 'package:taidam_tutor/core/data/characters/models/character.dart';
 import 'package:taidam_tutor/core/di/dependency_manager.dart';
 import 'package:taidam_tutor/feature/letter_search/letter_search.dart';
@@ -44,33 +41,18 @@ typedef InitGameParams = ({
   List<Character> allowedLetters
 });
 
-class AppCubit extends Cubit<InitGameParams?> {
-  final _characterRepository = dm.get<CharacterRepository>();
-
-  AppCubit() : super(null) {
+class AppCubit extends Cubit<bool> {
+  AppCubit() : super(false) {
     debugPrint('AppCubit initialized');
     init();
   }
 
   void init() {
-    _characterRepository.getCharacters().then((value) {
-      debugPrint('Characters loaded: $value');
-      final randomLetter = value[Random().nextInt(value.length)];
-      final randomAllowedLetters =
-          value.where(((e) => e != randomLetter)).toList();
-
-      randomAllowedLetters.shuffle();
-      final allowedLetters = randomAllowedLetters.take(4).toList();
-      allowedLetters.add(randomLetter);
-
-      emit((targetLetter: randomLetter, allowedLetters: allowedLetters));
-    }).catchError((error) {
-      emit(null);
-    });
+    emit(true);
   }
 
   void reload() {
-    emit(null);
+    emit(false);
     init();
   }
 }
@@ -80,15 +62,13 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<AppCubit, InitGameParams?>(
+    return BlocBuilder<AppCubit, bool>(
       builder: (context, state) {
         final appState = state;
-        if (appState == null) {
+        if (!appState) {
           return const Center(child: CircularProgressIndicator());
         }
-        return LetterSearchGame(
-            targetLetter: appState.targetLetter,
-            allowedLetters: appState.allowedLetters);
+        return LetterSearchGame();
       },
     );
   }

@@ -6,14 +6,10 @@ import 'package:taidam_tutor/feature/letter_search/widgets/letter_grid/letter_gr
 
 class LetterSearchGame extends StatelessWidget {
   final int gridSize;
-  final Character targetLetter;
-  final List<Character> allowedLetters;
 
   const LetterSearchGame({
     super.key,
     this.gridSize = 5,
-    required this.targetLetter,
-    required this.allowedLetters,
   });
 
   @override
@@ -22,8 +18,6 @@ class LetterSearchGame extends StatelessWidget {
       create: (_) => LetterSearchCubit()
         ..initializeGrid(
           size: gridSize,
-          targetLetter: targetLetter,
-          allowedLettersInput: allowedLetters,
         ),
       child: const LetterGrid(),
     );
