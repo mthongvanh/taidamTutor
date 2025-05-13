@@ -10,7 +10,7 @@ class FlashcardLocalDataSource {
 
   Future<void> init() async {
     final jsonString =
-        await rootBundle.loadString('assets/data/character.json');
+        await rootBundle.loadString('assets/data/flashcards.json');
     final List<dynamic> jsonList = json.decode(jsonString);
     _flashcards.addAll(
       jsonList.map((json) => Flashcard.fromJson(json)).toList(),

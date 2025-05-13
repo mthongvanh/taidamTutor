@@ -1,0 +1,460 @@
+[
+  {
+    "flashcardId": 1,
+    "audio": "a1",
+    "image": "a1",
+    "question": "ꪼꪀ",
+    "answer": "chicken"
+  },
+  {
+    "flashcardId": 2,
+    "audio": "a2",
+    "image": "a2",
+    "question": "ꪁꪮꪉ",
+    "answer": "gong"
+  },
+  {
+    "flashcardId": 3,
+    "audio": "a3",
+    "image": "a3",
+    "question": "ꪀꪲꪙ",
+    "answer": "eat"
+  },
+  {
+    "flashcardId": 4,
+    "audio": "a4",
+    "image": "a4",
+    "question": "ꪁꪲꪣ",
+    "answer": "pliers"
+  },
+  {
+    "flashcardId": 5,
+    "audio": "a5",
+    "image": "a5",
+    "question": "ꪀꪫꪱꪉ",
+    "answer": "deer"
+  },
+  {
+    "flashcardId": 6,
+    "audio": "a6",
+    "image": "a6",
+    "question": "ꪁꪫꪱꪤ",
+    "answer": "water buffalo"
+  },
+  {
+    "flashcardId": 7,
+    "audio": "a7",
+    "image": "a7",
+    "question": "ꪶꪄꪙ",
+    "answer": "feather"
+  },
+  {
+    "flashcardId": 8,
+    "audio": "a8",
+    "image": "a8",
+    "question": "ꪅꪺꪀ",
+    "answer": "tadpole"
+  },
+  {
+    "flashcardId": 9,
+    "audio": "a9",
+    "image": "a9",
+    "question": "ꪄꪫꪱꪙ",
+    "answer": "axe"
+  },
+  {
+    "flashcardId": 10,
+    "audio": "a10",
+    "image": "a10",
+    "question": "ꪈꪾ",
+    "answer": "to think"
+  },
+  {
+    "flashcardId": 11,
+    "audio": "a11",
+    "image": "a11",
+    "question": "ꪉꪴ",
+    "answer": "snake"
+  },
+  {
+    "flashcardId": 12,
+    "audio": "a12",
+    "image": "a12",
+    "question": "ꪊꪜ",
+    "answer": "hoe"
+  },
+  {
+    "flashcardId": 13,
+    "audio": "a13",
+    "image": "a13",
+    "question": "ꪋꪱꪉ",
+    "answer": "elephant"
+  },
+  {
+    "flashcardId": 14,
+    "audio": "a14",
+    "image": "a14",
+    "question": "ꪼꪎ",
+    "answer": "egg"
+  },
+  {
+    "flashcardId": 15,
+    "audio": "a15",
+    "image": "a15",
+    "question": "ꪼꪏ",
+    "answer": "fish trap"
+  },
+  {
+    "flashcardId": 16,
+    "audio": "a16",
+    "image": "a16",
+    "question": "ꪹꪐꪸꪙ",
+    "answer": "otter"
+  },
+  {
+    "flashcardId": 17,
+    "audio": "a17",
+    "image": "a17",
+    "question": "ꪚꪴꪉ",
+    "answer": "mosquito"
+  },
+  {
+    "flashcardId": 18,
+    "audio": "a18",
+    "image": "a18",
+    "question": "ꪒꪴꪀ",
+    "answer": "bone"
+  },
+  {
+    "flashcardId": 19,
+    "audio": "a19",
+    "image": "a19",
+    "question": "ꪓ",
+    "answer": "letter D"
+  },
+  {
+    "flashcardId": 20,
+    "audio": "a20",
+    "image": "a20",
+    "question": "ꪔꪷꪉ",
+    "answer": "stool"
+  },
+  {
+    "flashcardId": 21,
+    "audio": "a21",
+    "image": "a21",
+    "question": "ꪕꪱꪉ",
+    "answer": "path"
+  },
+  {
+    "flashcardId": 22,
+    "audio": "a22",
+    "image": "a22",
+    "question": "ꪖꪷ",
+    "answer": "rabbit"
+  },
+  {
+    "flashcardId": 23,
+    "audio": "a23",
+    "image": "a23",
+    "question": "ꪗꪴꪉ",
+    "answer": "bucket"
+  },
+  {
+    "flashcardId": 24,
+    "audio": "a24",
+    "image": "a24",
+    "question": "ꪘꪴ",
+    "answer": "rat"
+  },
+  {
+    "flashcardId": 25,
+    "audio": "a25",
+    "image": "a25",
+    "question": "ꪶꪙꪀ",
+    "answer": "bird"
+  },
+  {
+    "flashcardId": 26,
+    "audio": "a26",
+    "image": "a26",
+    "question": "ꪚꪱꪉ",
+    "answer": "flying squirrel"
+  },
+  {
+    "flashcardId": 27,
+    "audio": "a27",
+    "image": "a27",
+    "question": "ꪛꪱ ꪜꪺ",
+    "answer": "king"
+  },
+  {
+    "flashcardId": 28,
+    "audio": "a28",
+    "image": "a28",
+    "question": "ꪜꪱ",
+    "answer": "fish"
+  },
+  {
+    "flashcardId": 29,
+    "audio": "a29",
+    "image": "a29",
+    "question": "ꪝꪱꪴ",
+    "answer": "coconut"
+  },
+  {
+    "flashcardId": 30,
+    "audio": "a30",
+    "image": "a30",
+    "question": "ꪠꪱ",
+    "answer": "turtle"
+  },
+  {
+    "flashcardId": 31,
+    "audio": "a31",
+    "image": "a31",
+    "question": "ꪼꪡ",
+    "answer": "fire"
+  },
+  {
+    "flashcardId": 32,
+    "audio": "a32",
+    "image": "a32",
+    "question": "ꪢꪱ",
+    "answer": "dog"
+  },
+  {
+    "flashcardId": 33,
+    "audio": "a33",
+    "image": "a33",
+    "question": "ꪵꪣꪫ",
+    "answer": "cat"
+  },
+  {
+    "flashcardId": 34,
+    "audio": "a34",
+    "image": "a34",
+    "question": "ꪤꪸꪙ",
+    "answer": "eel"
+  },
+  {
+    "flashcardId": 35,
+    "audio": "a35",
+    "image": "a35",
+    "question": "ꪥꪷ",
+    "answer": "sheep"
+  },
+  {
+    "flashcardId": 36,
+    "audio": "a36",
+    "image": "a36",
+    "question": "ꪨꪱꪙ",
+    "answer": "grandchild"
+  },
+  {
+    "flashcardId": 37,
+    "audio": "a37",
+    "image": "a37",
+    "question": "ꪩꪲꪉ",
+    "answer": "monkey"
+  },
+  {
+    "flashcardId": 38,
+    "audio": "a38",
+    "image": "a38",
+    "question": "ꪵꪪꪙ ꪣꪳ",
+    "answer": "ring"
+  },
+  {
+    "flashcardId": 39,
+    "audio": "a39",
+    "image": "a39",
+    "question": "ꪵꪪꪙ ꪔꪱ",
+    "answer": "eye glasses"
+  },
+  {
+    "flashcardId": 40,
+    "audio": "a40",
+    "image": "a40",
+    "question": "ꪵꪬ",
+    "answer": "fishnet"
+  },
+  {
+    "flashcardId": 41,
+    "audio": "a41",
+    "image": "a41",
+    "question": "ꪭꪮꪀ",
+    "answer": "squirrel"
+  },
+  {
+    "flashcardId": 42,
+    "audio": "a42",
+    "image": "a42",
+    "question": "ꪮꪱꪉ",
+    "answer": "water basin"
+  },
+  {
+    "flashcardId": 43,
+    "audio": "a43",
+    "image": "a43",
+    "question": "ꪹꪯꪸꪣ",
+    "answer": "mother"
+  },
+  {
+    "flashcardId": 44,
+    "audio": "a44",
+    "image": "a44",
+    "question": "ꫛ",
+    "answer": "person"
+  },
+  {
+    "flashcardId": 45,
+    "audio": "a45",
+    "image": "a45",
+    "question": "ꫜ",
+    "answer": "one"
+  },
+  {
+    "flashcardId": 46,
+    "audio": "a18",
+    "image": "a18",
+    "question": "ꪒꪴꪀ",
+    "answer": "bone"
+  },
+  {
+    "flashcardId": 48,
+    
+    "image": "b48b",
+    "question": "ꪔꪱ",
+    "answer": "eye",
+    "audio": "b48b-word"
+  },
+  {
+    "flashcardId": 49,
+    
+    "image": "b51a",
+    "question": "ꪢꪲ",
+    "answer": "bear",
+    "audio": "b51a-word"
+  },
+  {
+    "flashcardId": 50,
+    
+    "image": "b54a",
+    "question": "ꪢꪴ",
+    "answer": "pig",
+    "audio": "b54a-word"
+  },
+  {
+    "flashcardId": 51,
+    
+    "image": "b57a",
+    "question": "ꪣꪳ",
+    "answer": "hand",
+    "audio": "b57a-word"
+  },
+  {
+    "flashcardId": 52,
+    
+    "image": "b59b",
+    "question": "ꪌꪸ",
+    "answer": "paper",
+    "audio": "b59b-word"
+  },
+  {
+    "flashcardId": 53,
+    
+    "image": "b61c",
+    "question": "ꪢꪷ",
+    "answer": "pot",
+    "audio": "b61c-word"
+  },
+  {
+    "flashcardId": 54,
+    
+    "image": "b64a",
+    "question": "ꪬꪺ",
+    "answer": "head",
+    "audio": "b64a-word"
+  },
+  {
+    "flashcardId": 55,
+    
+    "image": "b67b",
+    "question": "ꪶꪁ ꪼꪣ",
+    "answer": "log",
+    "audio": "b67b-word"
+  },
+  {
+    "flashcardId": 56,
+    
+    "image": "b69a",
+    "question": "ꪼꪡ",
+    "answer": "fire",
+    "audio": "b69a-word"
+  },
+  {
+    "flashcardId": 57,
+    
+    "image": "b70a",
+    "question": "ꪻꪚ",
+    "answer": "leaf",
+    "audio": "b70a-word"
+  },
+  {
+    "flashcardId": 58,
+    
+    "image": "b72a",
+    "question": "ꪣꪾ",
+    "answer": "water",
+    "audio": "b72a-word"
+  },
+  {
+    "flashcardId": 59,
+    
+    "image": "b73b",
+    "question": "ꪜꪽ",
+    "answer": "squeeze",
+    "audio": "b73b-word"
+  },
+  {
+    "flashcardId": 60,
+    
+    "image": "b75b",
+    "question": "ꪵꪚ",
+    "answer": "goat",
+    "audio": "b75b-word"
+  },
+  {
+    "flashcardId": 61,
+    
+    "image": "b78a",
+    "question": "ꪹꪎ",
+    "answer": "tiger",
+    "audio": "b78a-word"
+  },
+  {
+    "flashcardId": 62,
+    
+    "image": "b81c",
+    "question": "ꪹꪠꪷꪉ",
+    "answer": "bee",
+    "audio": "b81c-word"
+  },
+  {
+    "flashcardId": 63,
+    
+    "image": "b82a",
+    "question": "ꪹꪜꪸ",
+    "answer": "carry",
+    "audio": "b82a-word"
+  },
+  {
+    "flashcardId": 64,
+    
+    "image": "b84b",
+    "question": "ꪹꪁꪱ",
+    "answer": "owl",
+    "audio": "b84b-word"
+  }
+]

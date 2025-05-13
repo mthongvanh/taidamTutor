@@ -12,16 +12,14 @@ class Character extends Equatable {
   final String character;
 
   /// audio file name, e.g. a1.mp3
-  final String audioFile;
+  final String audio;
 
   /// image of the character, e.g. svg filename
-  @JsonKey(name: 'svg')
-  final String imageFile;
+  final String image;
 
   /// english sound approximation
   final String sound;
 
-  /// Whether the character is a vowel or consonant.
   final int characterType;
 
   /// For consonants, whether it is high or low.
@@ -30,13 +28,17 @@ class Character extends Equatable {
   /// For vowels, whether it comes before or after the consonant.
   final String? prePost;
 
+  //// Whether the character is a vowel, consonant, or special character.
+  final String characterClass;
+
   const Character({
     required this.characterId,
     required this.character,
-    required this.audioFile,
+    required this.audio,
     required this.sound,
     required this.characterType,
-    required this.imageFile,
+    required this.image,
+    required this.characterClass,
     this.highLow,
     this.prePost,
   });
@@ -50,10 +52,12 @@ class Character extends Equatable {
   List<Object?> get props => [
         characterId,
         character,
-        audioFile,
+        audio,
         sound,
         characterType,
+        image,
         highLow,
         prePost,
+        characterClass,
       ];
 }

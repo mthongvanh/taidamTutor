@@ -9,10 +9,11 @@ part of 'character.dart';
 Character _$CharacterFromJson(Map<String, dynamic> json) => Character(
       characterId: (json['characterId'] as num).toInt(),
       character: json['character'] as String,
-      audioFile: json['audioFile'] as String,
+      audio: json['audio'] as String,
       sound: json['sound'] as String,
       characterType: (json['characterType'] as num).toInt(),
-      imageFile: json['svg'] as String,
+      image: json['image'] as String,
+      characterClass: json['characterClass'] as String,
       highLow: json['highLow'] as String?,
       prePost: json['prePost'] as String?,
     );
@@ -20,10 +21,11 @@ Character _$CharacterFromJson(Map<String, dynamic> json) => Character(
 Map<String, dynamic> _$CharacterToJson(Character instance) => <String, dynamic>{
       'characterId': instance.characterId,
       'character': instance.character,
-      'audioFile': instance.audioFile,
-      'svg': instance.imageFile,
+      'audio': instance.audio,
+      'image': instance.image,
       'sound': instance.sound,
       'characterType': instance.characterType,
       'highLow': instance.highLow,
       'prePost': instance.prePost,
+      'characterClass': instance.characterClass,
     };
