@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:taidam_tutor/core/data/characters/models/character.dart';
 import 'package:taidam_tutor/core/di/dependency_manager.dart';
+import 'package:taidam_tutor/feature/character_list/character_list.dart';
 import 'package:taidam_tutor/feature/letter_search/letter_search.dart';
 
 void main() async {
@@ -41,19 +42,23 @@ typedef InitGameParams = ({
   List<Character> allowedLetters
 });
 
-class AppCubit extends Cubit<bool> {
-  AppCubit() : super(false) {
+class AppCubit extends Cubit<int> {
+  AppCubit() : super(0) {
     debugPrint('AppCubit initialized');
     init();
   }
 
   void init() {
-    emit(true);
+    emit(0);
   }
 
   void reload() {
-    emit(false);
+    emit(0);
     init();
+  }
+
+  void onItemTapped(int index) {
+    emit(index);
   }
 }
 
@@ -62,14 +67,39 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<AppCubit, bool>(
+    return BlocBuilder<AppCubit, int>(
       builder: (context, state) {
-        final appState = state;
-        if (!appState) {
-          return const Center(child: CircularProgressIndicator());
-        }
-        return LetterSearchGame();
+        return Scaffold(
+          body: Center(
+            child: _widgetOptions.elementAt(state),
+          ),
+          bottomNavigationBar: BottomNavigationBar(
+            items: const <BottomNavigationBarItem>[
+              BottomNavigationBarItem(
+                icon: Icon(Icons.list_alt_outlined),
+                activeIcon: Icon(Icons.list_alt),
+                label: 'Characters',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.search_outlined),
+                activeIcon: Icon(Icons.search),
+                label: 'Game',
+              ),
+            ],
+            currentIndex: state,
+            selectedItemColor:
+                Theme.of(context).primaryColor, // Or your preferred color
+            unselectedItemColor: Colors.grey,
+            onTap: context.read<AppCubit>().onItemTapped,
+            showUnselectedLabels: true,
+          ),
+        );
       },
     );
   }
+
+  static const List<Widget> _widgetOptions = <Widget>[
+    CharacterListPage(),
+    LetterSearchGame(),
+  ];
 }

@@ -22,50 +22,6 @@
     "characterClass": "consonant"
   },
   {
-    "characterId": 3,
-    "character": "ꪀ",
-    "audio": "a3",
-    "image": "a3",
-    "characterType": 1,
-    "highLow": "low",
-    "sound": "k",
-    "prePost": "",
-    "characterClass": "consonant"
-  },
-  {
-    "characterId": 4,
-    "character": "ꪁ",
-    "audio": "a4",
-    "image": "a4",
-    "characterType": 1,
-    "highLow": "high",
-    "sound": "k",
-    "prePost": "",
-    "characterClass": "consonant"
-  },
-  {
-    "characterId": 5,
-    "character": "ꪀꪫ",
-    "audio": "a5",
-    "image": "a5",
-    "characterType": 1,
-    "highLow": "low",
-    "sound": "ku",
-    "prePost": "",
-    "characterClass": "consonant"
-  },
-  {
-    "characterId": 6,
-    "character": "ꪁꪫ",
-    "audio": "a6",
-    "image": "a6",
-    "characterType": 1,
-    "highLow": "high",
-    "sound": "ku",
-    "prePost": "",
-    "characterClass": "consonant"
-  },
-  {
     "characterId": 7,
     "character": "ꪄ",
     "audio": "a7",
@@ -84,17 +40,6 @@
     "characterType": 1,
     "highLow": "high",
     "sound": "kh",
-    "prePost": "",
-    "characterClass": "consonant"
-  },
-  {
-    "characterId": 9,
-    "character": "ꪄꪫ",
-    "audio": "a9",
-    "image": "a9",
-    "characterType": 1,
-    "highLow": "low",
-    "sound": "kho",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -451,17 +396,6 @@
     "characterClass": "consonant"
   },
   {
-    "characterId": 42,
-    "character": "ꪽ",
-    "audio": "a42",
-    "image": "a42",
-    "characterType": 1,
-    "highLow": "low",
-    "sound": "an",
-    "prePost": "",
-    "characterClass": "consonant"
-  },
-  {
     "characterId": 43,
     "character": "ꪯ",
     "audio": "a43",
@@ -495,28 +429,6 @@
     "characterClass": "special"
   },
   {
-    "characterId": 46,
-    "character": "ꪒ",
-    "audio": "a18",
-    "image": "a18",
-    "characterType": 1,
-    "highLow": "low",
-    "sound": "d",
-    "prePost": "",
-    "characterClass": "consonant"
-  },
-  {
-    "characterId": 48,
-    "character": "ꪁꪱ",
-    "audio": "b48b-vowel",
-    "image": "b48",
-    "characterType": 0,
-    "highLow": "",
-    "sound": "ah",
-    "prePost": "post",
-    "characterClass": "vowel"
-  },
-  {
     "characterId": 49,
     "character": "ꪁꪲ",
     "audio": "b51a-vowel",
@@ -524,28 +436,6 @@
     "characterType": 0,
     "highLow": "",
     "sound": "ee",
-    "prePost": "post",
-    "characterClass": "vowel"
-  },
-  {
-    "characterId": 50,
-    "character": "ꪁꪴ",
-    "audio": "b54a-vowel",
-    "image": "b54",
-    "characterType": 0,
-    "highLow": "",
-    "sound": "oo",
-    "prePost": "post",
-    "characterClass": "vowel"
-  },
-  {
-    "characterId": 51,
-    "character": "ꪁꪳ",
-    "audio": "b57a-vowel",
-    "image": "b57",
-    "characterType": 0,
-    "highLow": "",
-    "sound": "eu",
     "prePost": "post",
     "characterClass": "vowel"
   },
@@ -561,80 +451,14 @@
     "characterClass": "vowel"
   },
   {
-    "characterId": 53,
-    "character": "ꪁꪷ",
-    "audio": "b61c-vowel",
-    "image": "b61",
+    "characterId": 63,
+    "character": "ꪹꪁꪸ",
+    "audio": "b82a-vowel",
+    "image": "b82",
     "characterType": 0,
     "highLow": "",
-    "sound": "aw",
-    "prePost": "post",
-    "characterClass": "vowel"
-  },
-  {
-    "characterId": 54,
-    "character": "ꪁꪺ",
-    "audio": "b64a-vowel",
-    "image": "b64",
-    "characterType": 2,
-    "highLow": "",
-    "sound": "oo-a",
-    "prePost": "post",
-    "characterClass": "vowel"
-  },
-  {
-    "characterId": 55,
-    "character": "ꪶꪁ",
-    "audio": "b67b-vowel",
-    "image": "b67",
-    "characterType": 0,
-    "highLow": "",
-    "sound": "oh",
+    "sound": "eh",
     "prePost": "pre",
-    "characterClass": "vowel"
-  },
-  {
-    "characterId": 56,
-    "character": "ꪼꪁ",
-    "audio": "b69a-vowel",
-    "image": "b69",
-    "characterType": 2,
-    "highLow": "",
-    "sound": "ai",
-    "prePost": "pre",
-    "characterClass": "vowel"
-  },
-  {
-    "characterId": 57,
-    "character": "ꪻꪁ",
-    "audio": "b70a-vowel",
-    "image": "b70",
-    "characterType": 2,
-    "highLow": "",
-    "sound": "au",
-    "prePost": "pre",
-    "characterClass": "vowel"
-  },
-  {
-    "characterId": 58,
-    "character": "ꪁꪾ",
-    "audio": "b72a-vowel",
-    "image": "b72",
-    "characterType": 1,
-    "highLow": "",
-    "sound": "m",
-    "prePost": "post",
-    "characterClass": "vowel"
-  },
-  {
-    "characterId": 59,
-    "character": "ꪁꪽ",
-    "audio": "b73b-vowel",
-    "image": "b73",
-    "characterType": 1,
-    "highLow": "",
-    "sound": "n",
-    "prePost": "post",
     "characterClass": "vowel"
   },
   {
@@ -646,6 +470,17 @@
     "highLow": "",
     "sound": "ae",
     "prePost": "pre",
+    "characterClass": "vowel"
+  },
+  {
+    "characterId": 51,
+    "character": "ꪁꪳ",
+    "audio": "b57a-vowel",
+    "image": "b57",
+    "characterType": 0,
+    "highLow": "",
+    "sound": "eu",
+    "prePost": "post",
     "characterClass": "vowel"
   },
   {
@@ -671,13 +506,68 @@
     "characterClass": "vowel"
   },
   {
-    "characterId": 63,
-    "character": "ꪹꪁꪸ",
-    "audio": "b82a-vowel",
-    "image": "b82",
+    "characterId": 53,
+    "character": "ꪁꪷ",
+    "audio": "b61c-vowel",
+    "image": "b61",
     "characterType": 0,
     "highLow": "",
-    "sound": "eh",
+    "sound": "aw",
+    "prePost": "post",
+    "characterClass": "vowel"
+  },
+  {
+    "characterId": 48,
+    "character": "ꪁꪱ",
+    "audio": "b48b-vowel",
+    "image": "b48",
+    "characterType": 0,
+    "highLow": "",
+    "sound": "ah",
+    "prePost": "post",
+    "characterClass": "vowel"
+  },
+  {
+    "characterId": 59,
+    "character": "ꪁꪽ",
+    "audio": "b73b-vowel",
+    "image": "b73",
+    "characterType": 1,
+    "highLow": "",
+    "sound": "an",
+    "prePost": "post",
+    "characterClass": "vowel"
+  },
+  {
+    "characterId": 58,
+    "character": "ꪁꪾ",
+    "audio": "b72a-vowel",
+    "image": "b72",
+    "characterType": 1,
+    "highLow": "",
+    "sound": "am",
+    "prePost": "post",
+    "characterClass": "vowel"
+  },
+  {
+    "characterId": 57,
+    "character": "ꪻꪁ",
+    "audio": "b70a-vowel",
+    "image": "b70",
+    "characterType": 2,
+    "highLow": "",
+    "sound": "au",
+    "prePost": "pre",
+    "characterClass": "vowel"
+  },
+  {
+    "characterId": 56,
+    "character": "ꪼꪁ",
+    "audio": "b69a-vowel",
+    "image": "b69",
+    "characterType": 2,
+    "highLow": "",
+    "sound": "ai",
     "prePost": "pre",
     "characterClass": "vowel"
   },
@@ -689,6 +579,39 @@
     "characterType": 2,
     "highLow": "",
     "sound": "ah-oo",
+    "prePost": "pre",
+    "characterClass": "vowel"
+  },
+  {
+    "characterId": 50,
+    "character": "ꪁꪴ",
+    "audio": "b54a-vowel",
+    "image": "b54",
+    "characterType": 0,
+    "highLow": "",
+    "sound": "oo",
+    "prePost": "post",
+    "characterClass": "vowel"
+  },
+  {
+    "characterId": 54,
+    "character": "ꪁꪺ",
+    "audio": "b64a-vowel",
+    "image": "b64",
+    "characterType": 2,
+    "highLow": "",
+    "sound": "oo-a",
+    "prePost": "post",
+    "characterClass": "vowel"
+  },
+  {
+    "characterId": 55,
+    "character": "ꪶꪁ",
+    "audio": "b67b-vowel",
+    "image": "b67",
+    "characterType": 0,
+    "highLow": "",
+    "sound": "oh",
     "prePost": "pre",
     "characterClass": "vowel"
   }
