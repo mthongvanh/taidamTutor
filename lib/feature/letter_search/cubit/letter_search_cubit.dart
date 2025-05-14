@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:just_audio/just_audio.dart';
 import 'package:taidam_tutor/core/data/characters/character_repository.dart';
 import 'package:taidam_tutor/core/data/characters/models/character.dart';
 import 'package:taidam_tutor/core/data/flashcards/flashcard_repository.dart';
@@ -18,7 +17,6 @@ enum SearchMode {
 class LetterSearchCubit extends Cubit<LetterSearchState> {
   final _characterRepository = dm.get<CharacterRepository>();
   final _flashcardRepository = dm.get<FlashcardRepository>();
-  final _audioPlayer = AudioPlayer();
 
   final Random _random = Random();
 

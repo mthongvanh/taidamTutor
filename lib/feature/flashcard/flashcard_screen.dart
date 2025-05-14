@@ -91,43 +91,6 @@ class FlashcardItemWidget extends StatelessWidget {
     required this.characterToHighlight,
   });
 
-  List<TextSpan> _highlightOccurrences(
-      String text, String query, BuildContext context) {
-    if (query.isEmpty || !text.toLowerCase().contains(query.toLowerCase())) {
-      return [TextSpan(text: text)];
-    }
-    final List<TextSpan> spans = [];
-    int start = 0;
-    final TextStyle? defaultStyle = Theme.of(context).textTheme.bodyMedium;
-    final TextStyle highlightStyle = defaultStyle?.copyWith(
-          fontWeight: FontWeight.bold,
-          backgroundColor: Colors.redAccent,
-        ) ??
-        const TextStyle(
-          fontWeight: FontWeight.bold,
-          backgroundColor: Colors.redAccent,
-        );
-
-    while (start < text.length) {
-      final int matchPosition =
-          text.toLowerCase().indexOf(query.toLowerCase(), start);
-      if (matchPosition == -1) {
-        spans.add(TextSpan(text: text.substring(start), style: defaultStyle));
-        break;
-      }
-      if (matchPosition > start) {
-        spans.add(TextSpan(
-            text: text.substring(start, matchPosition), style: defaultStyle));
-      }
-      spans.add(TextSpan(
-        text: text.substring(matchPosition, matchPosition + query.length),
-        style: highlightStyle,
-      ));
-      start = matchPosition + query.length;
-    }
-    return spans;
-  }
-
   @override
   Widget build(BuildContext context) {
     return InkWell(

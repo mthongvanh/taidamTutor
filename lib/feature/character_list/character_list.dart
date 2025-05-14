@@ -120,7 +120,6 @@ class CharacterListView extends StatelessWidget {
 
 class _CharacterListCard extends StatelessWidget {
   const _CharacterListCard({
-    super.key,
     required this.character,
     this.onTap,
   });
