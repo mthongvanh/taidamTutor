@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:taidam_tutor/core/data/characters/models/character.dart';
 import 'package:taidam_tutor/feature/character_list/cubit/character_list_cubit.dart';
 import 'package:taidam_tutor/feature/character_list/cubit/character_list_state.dart';
@@ -49,6 +48,9 @@ class CharacterListView extends StatelessWidget {
             slivers: [
               _buildCharacterGroup(context, 'Consonants', state.consonants),
               _buildCharacterGroup(context, 'Vowels', state.vowels),
+              _buildCharacterGroup(context, 'Vowel Finals', state.vowelFinals),
+              _buildCharacterGroup(
+                  context, 'Vowel Combinations', state.vowelCombinations),
               _buildCharacterGroup(
                   context, 'Special Characters', state.specialCharacters),
             ],

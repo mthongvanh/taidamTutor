@@ -15,16 +15,26 @@ class CharacterLoading extends CharacterListState {}
 class CharacterLoaded extends CharacterListState {
   final List<Character> consonants;
   final List<Character> vowels;
+  final List<Character> vowelFinals;
+  final List<Character> vowelCombinations;
   final List<Character> specialCharacters;
 
   const CharacterLoaded({
     required this.consonants,
     required this.vowels,
+    required this.vowelFinals,
+    required this.vowelCombinations,
     required this.specialCharacters,
   });
 
   @override
-  List<Object> get props => [consonants, vowels, specialCharacters];
+  List<Object> get props => [
+        consonants,
+        vowels,
+        specialCharacters,
+        vowelFinals,
+        vowelCombinations,
+      ];
 }
 
 class CharacterError extends CharacterListState {

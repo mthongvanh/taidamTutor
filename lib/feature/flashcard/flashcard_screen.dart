@@ -144,23 +144,29 @@ class FlashcardItemWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text.rich(
-                TextSpan(children: [
-                  const TextSpan(
-                      text: "Front: ",
-                      style: TextStyle(fontWeight: FontWeight.bold)),
-                  ..._highlightOccurrences(
-                      flashcard.question, characterToHighlight, context),
-                ]),
+                TextSpan(
+                  children: [
+                    const TextSpan(
+                        text: "Front: ",
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                    TextSpan(
+                      text: flashcard.question,
+                    ),
+                  ],
+                ),
               ),
               const SizedBox(height: 8),
               Text.rich(
-                TextSpan(children: [
-                  const TextSpan(
-                      text: "Back: ",
-                      style: TextStyle(fontWeight: FontWeight.bold)),
-                  ..._highlightOccurrences(
-                      flashcard.answer, characterToHighlight, context),
-                ]),
+                TextSpan(
+                  children: [
+                    const TextSpan(
+                        text: "Back: ",
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                    TextSpan(
+                      text: flashcard.answer,
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
