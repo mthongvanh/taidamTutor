@@ -12,7 +12,18 @@ class CharacterListPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Tai Dam Characters'),
+        leading: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Image.asset(
+            'assets/images/png/flag.png',
+          ),
+        ),
+        title: Text(
+          'Tai Dam Characters',
+          style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+        ),
       ),
       body: BlocProvider<CharacterListCubit>(
         create: (context) => CharacterListCubit(),

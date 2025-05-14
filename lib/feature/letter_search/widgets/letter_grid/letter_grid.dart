@@ -13,49 +13,6 @@ class LetterGrid extends StatelessWidget {
     super.key,
   });
 
-  void _showWinDialog(BuildContext context) {
-    showDialog(
-      context: context,
-      barrierDismissible: false, // User must tap button to close
-      builder: (BuildContext dialogContext) {
-        return AlertDialog(
-          title: const Text(
-            'Congratulations!',
-            textAlign: TextAlign.center,
-          ),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            spacing: 16,
-            children: [
-              Card(
-                clipBehavior: Clip.hardEdge,
-                child: Image.asset(
-                  'assets/images/png/celebrate.png',
-                  width: 200,
-                  height: 200,
-                ),
-              ),
-              const Text(
-                'You found them all!',
-                textAlign: TextAlign.center,
-              ),
-            ],
-          ),
-          actions: <Widget>[
-            TextButton(
-              child: const Text('OK'),
-              onPressed: () {
-                Navigator.of(dialogContext).pop();
-                // Reset the grid by calling the cubit method
-                context.read<LetterSearchCubit>().resetGrid();
-              },
-            ),
-          ],
-        );
-      },
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -188,9 +145,13 @@ class LetterGrid extends StatelessWidget {
                               GridCell cell = cellEntry.value;
                               Color backgroundColor;
                               if (cell.isTarget && cell.isRevealed) {
-                                backgroundColor = Colors.green.shade400;
+                                backgroundColor = Theme.of(context)
+                                    .colorScheme
+                                    .tertiaryContainer;
                               } else {
-                                backgroundColor = Colors.blueAccent.shade100;
+                                backgroundColor = Theme.of(context)
+                                    .colorScheme
+                                    .secondaryContainer;
                               }
 
                               return _SearchGridItem(
@@ -220,6 +181,49 @@ class LetterGrid extends StatelessWidget {
         tooltip: 'New Grid (Same Settings)',
         child: const Icon(Icons.refresh),
       ),
+    );
+  }
+
+  void _showWinDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      barrierDismissible: false, // User must tap button to close
+      builder: (BuildContext dialogContext) {
+        return AlertDialog(
+          title: const Text(
+            'Congratulations!',
+            textAlign: TextAlign.center,
+          ),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            spacing: 16,
+            children: [
+              Card(
+                clipBehavior: Clip.hardEdge,
+                child: Image.asset(
+                  'assets/images/png/celebrate.png',
+                  width: 200,
+                  height: 200,
+                ),
+              ),
+              const Text(
+                'You found them all!',
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
+          actions: <Widget>[
+            ElevatedButton(
+              child: const Text('OK'),
+              onPressed: () {
+                Navigator.of(dialogContext).pop();
+                // Reset the grid by calling the cubit method
+                context.read<LetterSearchCubit>().resetGrid();
+              },
+            ),
+          ],
+        );
+      },
     );
   }
 }
@@ -261,14 +265,17 @@ class _SearchGridItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(4.0),
           border: Border.all(color: Colors.black26, width: 0.5),
         ),
-        child: Text(
-          cell.letter,
-          maxLines: 2,
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            color: Colors.black87,
-            fontSize: fontSize,
-            fontWeight: FontWeight.bold,
+        child: Padding(
+          padding: const EdgeInsets.all(4.0),
+          child: Text(
+            cell.letter,
+            maxLines: 2,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Theme.of(context).colorScheme.onSurfaceVariant,
+              fontSize: fontSize,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
       ),

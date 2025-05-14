@@ -93,14 +93,15 @@ class FlashcardItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {
-        if (flashcard.audio != null && flashcard.audio!.isNotEmpty) {
-          player.play(AssetSource('audio/${flashcard.audio}.caf'));
-        }
-      },
-      child: Card(
-        margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+    return Card(
+      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      clipBehavior: Clip.hardEdge,
+      child: InkWell(
+        onTap: () {
+          if (flashcard.audio != null && flashcard.audio!.isNotEmpty) {
+            player.play(AssetSource('audio/${flashcard.audio}.caf'));
+          }
+        },
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
