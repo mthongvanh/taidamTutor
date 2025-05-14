@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:taidam_tutor/feature/letter_search/cubit/letter_search_cubit.dart';
@@ -5,7 +6,12 @@ import 'package:taidam_tutor/feature/letter_search/cubit/letter_search_state.dar
 import 'package:taidam_tutor/feature/letter_search/widgets/letter_grid/core/data/models/grid_cell.dart';
 
 class LetterGrid extends StatelessWidget {
-  const LetterGrid({super.key});
+  final AudioPlayer audioPlayer;
+
+  const LetterGrid(
+    this.audioPlayer, {
+    super.key,
+  });
 
   void _showWinDialog(BuildContext context) {
     showDialog(
@@ -13,8 +19,28 @@ class LetterGrid extends StatelessWidget {
       barrierDismissible: false, // User must tap button to close
       builder: (BuildContext dialogContext) {
         return AlertDialog(
-          title: const Text('Congratulations!'),
-          content: const Text('You found all the letters!'),
+          title: const Text(
+            'Congratulations!',
+            textAlign: TextAlign.center,
+          ),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            spacing: 16,
+            children: [
+              Card(
+                clipBehavior: Clip.hardEdge,
+                child: Image.asset(
+                  'assets/images/png/celebrate.png',
+                  width: 200,
+                  height: 200,
+                ),
+              ),
+              const Text(
+                'You found them all!',
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
           actions: <Widget>[
             TextButton(
               child: const Text('OK'),
@@ -40,13 +66,25 @@ class LetterGrid extends StatelessWidget {
               prev.isLoading != curr.isLoading,
           builder: (context, state) {
             if (state.isLoading && state.targetLetter == null) {
-              return const Text('Letter Search Game');
+              return const Text('Character Search Game');
             }
-            return Text(state.targetLetter == null
-                ? 'Letter Search Game'
-                : 'Find: ${state.targetLetter!.character}');
+            return Text(
+              state.targetLetter == null
+                  ? 'Character Search Game'
+                  : state.searchMode == SearchMode.singleCharacter
+                      ? 'Find'
+                      : 'Find words containing',
+            );
           },
         ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.swap_horiz_rounded),
+            onPressed: () {
+              context.read<LetterSearchCubit>().changeSearchMode();
+            },
+          ),
+        ],
       ),
       body: BlocListener<LetterSearchCubit, LetterSearchState>(
         listener: (context, state) {
@@ -65,68 +103,73 @@ class LetterGrid extends StatelessWidget {
             }
 
             if (state.errorMessage != null) {
-              return Center(
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Error: ${state.errorMessage}',
-                        style: const TextStyle(color: Colors.red, fontSize: 16),
-                        textAlign: TextAlign.center,
-                      ),
-                      const SizedBox(height: 20),
-                      ElevatedButton(
-                        onPressed: () {
-                          context.read<LetterSearchCubit>().resetGrid();
-                        },
-                        child: const Text('Try Again / Reset'),
-                      )
-                    ],
-                  ),
-                ),
-              );
+              return _LetterSearchError(state.errorMessage!);
             }
 
             if (state.grid.isEmpty && !state.isLoading) {
-              return const Center(
-                  child: Text(
-                      'Grid not initialized. Please ensure parameters are correct and try resetting.'));
+              return _LetterSearchError(
+                'Grid not initialized. Please ensure parameters are correct and try resetting.',
+              );
             }
+
             if (state.grid.isEmpty) {
               // Should be caught by above, but as a fallback
-              return const Center(child: Text('No grid to display.'));
+              return _LetterSearchError('No grid to display.');
             }
 
             double screenWidth = MediaQuery.of(context).size.width;
             double cellSize = (screenWidth * 0.8) / state.gridSize;
             // Ensure minimum cell size for very small screens or large grids
             cellSize = cellSize < 30.0 ? 30.0 : cellSize;
-            double fontSize = cellSize * 0.4;
+            double fontSize = cellSize * 0.25;
 
             return Column(
               spacing: 16,
               children: [
-                Center(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Column(
-                      children: [
-                        Text(
-                          state.targetLetter?.character ?? '',
-                          style: const TextStyle(
-                            fontSize: 70,
-                          ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        width: cellSize * 1.5,
+                        height: cellSize * 1.5,
+                        child: Stack(
+                          alignment: Alignment.center,
+                          fit: StackFit.loose,
+                          children: [
+                            Text(
+                              state.targetLetter?.character ?? '',
+                              style: const TextStyle(
+                                fontSize: 70,
+                              ),
+                            ),
+                            Positioned(
+                              bottom: 0,
+                              right: 0,
+                              child: IconButton(
+                                icon: const Icon(Icons.play_circle),
+                                onPressed: () {
+                                  if (state.targetLetter?.audio != null) {
+                                    audioPlayer.play(
+                                      AssetSource(
+                                        'audio/${state.targetLetter?.audio}.caf',
+                                      ),
+                                    );
+                                  }
+                                },
+                              ),
+                            ),
+                          ],
                         ),
-                        Text(
-                          'sounds like \'${state.targetLetter?.sound ?? ''}\'',
-                          style: const TextStyle(
-                            fontSize: 30,
-                          ),
+                      ),
+                      Text(
+                        'sounds like \'${state.targetLetter?.sound ?? ''}\'',
+                        style: const TextStyle(
+                          fontSize: 25,
+                          fontStyle: FontStyle.italic,
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ),
                 Expanded(
@@ -150,39 +193,13 @@ class LetterGrid extends StatelessWidget {
                                 backgroundColor = Colors.blueAccent.shade100;
                               }
 
-                              return GestureDetector(
-                                onTap: () {
-                                  // Check if the game is already won to prevent interaction
-                                  if (context
-                                      .read<LetterSearchCubit>()
-                                      .state
-                                      .gameWon) {
-                                    return;
-                                  }
-                                  context
-                                      .read<LetterSearchCubit>()
-                                      .cellTapped(rowIndex, colIndex);
-                                },
-                                child: Container(
-                                  margin: const EdgeInsets.all(2.0),
-                                  width: cellSize,
-                                  height: cellSize,
-                                  alignment: Alignment.center,
-                                  decoration: BoxDecoration(
-                                    color: backgroundColor,
-                                    borderRadius: BorderRadius.circular(4.0),
-                                    border: Border.all(
-                                        color: Colors.black26, width: 0.5),
-                                  ),
-                                  child: Text(
-                                    cell.letter,
-                                    style: TextStyle(
-                                      color: Colors.black87,
-                                      fontSize: fontSize,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
+                              return _SearchGridItem(
+                                rowIndex: rowIndex,
+                                colIndex: colIndex,
+                                cellSize: cellSize,
+                                backgroundColor: backgroundColor,
+                                cell: cell,
+                                fontSize: fontSize,
                               );
                             }).toList(),
                           );
@@ -202,6 +219,98 @@ class LetterGrid extends StatelessWidget {
         },
         tooltip: 'New Grid (Same Settings)',
         child: const Icon(Icons.refresh),
+      ),
+    );
+  }
+}
+
+class _SearchGridItem extends StatelessWidget {
+  const _SearchGridItem({
+    required this.rowIndex,
+    required this.colIndex,
+    required this.cellSize,
+    required this.backgroundColor,
+    required this.cell,
+    required this.fontSize,
+  });
+
+  final int rowIndex;
+  final int colIndex;
+  final double cellSize;
+  final Color backgroundColor;
+  final GridCell cell;
+  final double fontSize;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        // Check if the game is already won to prevent interaction
+        if (context.read<LetterSearchCubit>().state.gameWon) {
+          return;
+        }
+        context.read<LetterSearchCubit>().cellTapped(rowIndex, colIndex);
+      },
+      child: Container(
+        margin: const EdgeInsets.all(2.0),
+        width: cellSize,
+        height: cellSize,
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          color: backgroundColor,
+          borderRadius: BorderRadius.circular(4.0),
+          border: Border.all(color: Colors.black26, width: 0.5),
+        ),
+        child: Text(
+          cell.letter,
+          maxLines: 2,
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            color: Colors.black87,
+            fontSize: fontSize,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _LetterSearchError extends StatelessWidget {
+  final String errorMessage;
+  const _LetterSearchError(this.errorMessage);
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          spacing: 16,
+          children: [
+            Text(
+              'Oops, something went wrong!',
+              style: Theme.of(context).textTheme.titleLarge,
+              textAlign: TextAlign.center,
+            ),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: Image.asset(
+                'assets/images/png/sad-construction.png',
+                width: 200,
+                height: 200,
+              ),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                context.read<LetterSearchCubit>().resetGrid();
+              },
+              child: const Text('Try Again / Reset'),
+            )
+          ],
+        ),
       ),
     );
   }

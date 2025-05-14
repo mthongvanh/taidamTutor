@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:taidam_tutor/feature/letter_search/cubit/letter_search_cubit.dart';
@@ -8,7 +9,7 @@ class LetterSearchGame extends StatelessWidget {
 
   const LetterSearchGame({
     super.key,
-    this.gridSize = 5,
+    this.gridSize = 3,
   });
 
   @override
@@ -18,7 +19,7 @@ class LetterSearchGame extends StatelessWidget {
         ..initializeGrid(
           size: gridSize,
         ),
-      child: const LetterGrid(),
+      child: LetterGrid(AudioPlayer()),
     );
   }
 }

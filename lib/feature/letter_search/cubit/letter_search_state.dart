@@ -1,8 +1,10 @@
 import 'package:equatable/equatable.dart';
 import 'package:taidam_tutor/core/data/characters/models/character.dart';
+import 'package:taidam_tutor/feature/letter_search/cubit/letter_search_cubit.dart';
 import 'package:taidam_tutor/feature/letter_search/widgets/letter_grid/core/data/models/grid_cell.dart';
 
 class LetterSearchState extends Equatable {
+  final SearchMode searchMode;
   final List<List<GridCell>> grid;
   final bool gameWon;
   final Character? targetLetter;
@@ -11,6 +13,7 @@ class LetterSearchState extends Equatable {
   final String? errorMessage;
 
   const LetterSearchState({
+    this.searchMode = SearchMode.singleCharacter,
     this.grid = const [],
     this.targetLetter,
     this.gridSize = 0,
@@ -20,6 +23,7 @@ class LetterSearchState extends Equatable {
   });
 
   LetterSearchState copyWith({
+    SearchMode? searchMode,
     List<List<GridCell>>? grid,
     Character? targetLetter,
     int? gridSize,
@@ -29,6 +33,7 @@ class LetterSearchState extends Equatable {
     bool? gameWon,
   }) {
     return LetterSearchState(
+      searchMode: searchMode ?? this.searchMode,
       grid: grid ?? this.grid,
       targetLetter: targetLetter ?? this.targetLetter,
       gridSize: gridSize ?? this.gridSize,
@@ -40,6 +45,13 @@ class LetterSearchState extends Equatable {
   }
 
   @override
-  List<Object?> get props =>
-      [grid, targetLetter, gridSize, isLoading, errorMessage, gameWon];
+  List<Object?> get props => [
+        grid,
+        targetLetter,
+        gridSize,
+        isLoading,
+        errorMessage,
+        gameWon,
+        searchMode,
+      ];
 }
