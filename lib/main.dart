@@ -5,6 +5,7 @@ import 'package:taidam_tutor/core/data/characters/models/character.dart';
 import 'package:taidam_tutor/core/di/dependency_manager.dart';
 import 'package:taidam_tutor/feature/character_list/character_list.dart';
 import 'package:taidam_tutor/feature/letter_search/letter_search.dart';
+import 'package:taidam_tutor/feature/quiz/quiz_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -107,6 +108,11 @@ class App extends StatelessWidget {
                 label: 'Characters',
               ),
               BottomNavigationBarItem(
+                icon: Icon(Icons.quiz_outlined),
+                activeIcon: Icon(Icons.quiz),
+                label: 'Quiz',
+              ),
+              BottomNavigationBarItem(
                 icon: Icon(Icons.search_outlined),
                 activeIcon: Icon(Icons.search),
                 label: 'Game',
@@ -124,8 +130,9 @@ class App extends StatelessWidget {
     );
   }
 
-  static const List<Widget> _widgetOptions = <Widget>[
+  static final List<Widget> _widgetOptions = <Widget>[
     CharacterListPage(),
+    QuizPage(),
     LetterSearchGame(),
   ];
 }

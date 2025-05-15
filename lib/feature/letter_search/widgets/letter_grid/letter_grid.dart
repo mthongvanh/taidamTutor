@@ -6,6 +6,7 @@ import 'package:taidam_tutor/feature/letter_search/cubit/letter_search_state.dar
 import 'package:taidam_tutor/feature/letter_search/widgets/letter_grid/core/data/models/grid_cell.dart';
 import 'package:taidam_tutor/utils/extensions/card_ext.dart';
 import 'package:taidam_tutor/utils/extensions/text_ext.dart';
+import 'package:taidam_tutor/widgets/error/tai_error.dart';
 
 class LetterGrid extends StatelessWidget {
   final AudioPlayer audioPlayer;
@@ -65,18 +66,25 @@ class LetterGrid extends StatelessWidget {
             }
 
             if (state.errorMessage != null) {
-              return _LetterSearchError(state.errorMessage!);
+              return TaiError(
+                state.errorMessage!,
+                onRetry: () => context.read<LetterSearchCubit>().resetGrid(),
+              );
             }
 
             if (state.grid.isEmpty && !state.isLoading) {
-              return _LetterSearchError(
+              return TaiError(
                 'Grid not initialized. Please ensure parameters are correct and try resetting.',
+                onRetry: () => context.read<LetterSearchCubit>().resetGrid(),
               );
             }
 
             if (state.grid.isEmpty) {
               // Should be caught by above, but as a fallback
-              return _LetterSearchError('No grid to display.');
+              return TaiError(
+                'No grid to display.',
+                onRetry: () => context.read<LetterSearchCubit>().resetGrid(),
+              );
             }
 
             double screenWidth = MediaQuery.of(context).size.width;
@@ -268,16 +276,10 @@ class _SearchGridItem extends StatelessWidget {
       },
       child: TaiCard(
         child: Container(
-          // margin: const EdgeInsets.all(2.0),
           color: backgroundColor,
           width: cellSize,
           height: cellSize,
           alignment: Alignment.center,
-          // decoration: BoxDecoration(
-          //   color: backgroundColor,
-          //   borderRadius: BorderRadius.circular(8.0),
-          //   border: Border.all(color: Colors.black26, width: 0.5),
-          // ),
           child: Padding(
             padding: const EdgeInsets.all(4.0),
             child: Text(
@@ -291,47 +293,6 @@ class _SearchGridItem extends StatelessWidget {
               ),
             ),
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class _LetterSearchError extends StatelessWidget {
-  final String errorMessage;
-  const _LetterSearchError(this.errorMessage);
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          // mainAxisAlignment: MainAxisAlignment.center,
-          spacing: 16,
-          children: [
-            Text(
-              'Oops, something went wrong!',
-              style: Theme.of(context).textTheme.titleLarge,
-              textAlign: TextAlign.center,
-            ),
-            TaiCard(
-              shadowColor: Colors.black,
-              elevation: 12,
-              child: Image.asset(
-                'assets/images/png/sad-construction.png',
-                // width: 200,
-                // height: 200,
-              ),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                context.read<LetterSearchCubit>().resetGrid();
-              },
-              child: const Text('Try Again / Reset'),
-            )
-          ],
         ),
       ),
     );
