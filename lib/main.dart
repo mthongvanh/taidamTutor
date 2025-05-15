@@ -14,6 +14,7 @@ void main() async {
     MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         textTheme: GoogleFonts.bricolageGrotesqueTextTheme().copyWith(
           bodyLarge: GoogleFonts.latoTextTheme().bodyLarge,
           bodyMedium: GoogleFonts.latoTextTheme().bodyMedium,
@@ -21,6 +22,18 @@ void main() async {
         ),
       ),
       darkTheme: ThemeData.dark().copyWith(
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.black12,
+          foregroundColor: Colors.white,
+        ),
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          elevation: 0,
+        ),
+        scaffoldBackgroundColor: Colors.transparent,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.blue,
+          brightness: Brightness.dark,
+        ),
         textTheme: GoogleFonts.bricolageGrotesqueTextTheme(darkText).copyWith(
           bodyLarge: GoogleFonts.latoTextTheme(darkText).bodyLarge,
           bodyMedium: GoogleFonts.latoTextTheme(darkText).bodyMedium,
@@ -68,9 +81,24 @@ class App extends StatelessWidget {
     return BlocBuilder<AppCubit, int>(
       builder: (context, state) {
         return Scaffold(
-          body: Center(
-            child: _widgetOptions.elementAt(state),
+          body: Container(
+            decoration: BoxDecoration(
+              gradient: Theme.of(context).brightness == Brightness.dark
+                  ? LinearGradient(
+                      colors: [
+                        const Color.fromARGB(80, 42, 84, 112),
+                        const Color.fromARGB(80, 66, 65, 119),
+                      ],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    )
+                  : null,
+            ),
+            child: Center(
+              child: _widgetOptions.elementAt(state),
+            ),
           ),
+          resizeToAvoidBottomInset: true,
           bottomNavigationBar: BottomNavigationBar(
             items: const <BottomNavigationBarItem>[
               BottomNavigationBarItem(

@@ -4,6 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:taidam_tutor/feature/letter_search/cubit/letter_search_cubit.dart';
 import 'package:taidam_tutor/feature/letter_search/cubit/letter_search_state.dart';
 import 'package:taidam_tutor/feature/letter_search/widgets/letter_grid/core/data/models/grid_cell.dart';
+import 'package:taidam_tutor/utils/extensions/card_ext.dart';
+import 'package:taidam_tutor/utils/extensions/text_ext.dart';
 
 class LetterGrid extends StatelessWidget {
   final AudioPlayer audioPlayer;
@@ -23,15 +25,18 @@ class LetterGrid extends StatelessWidget {
               prev.isLoading != curr.isLoading,
           builder: (context, state) {
             if (state.isLoading && state.targetLetter == null) {
-              return const Text('Character Search Game');
+              return TaiText.appBarTitle(
+                'Character Search Game',
+                context,
+              );
             }
-            return Text(
-              state.targetLetter == null
-                  ? 'Character Search Game'
-                  : state.searchMode == SearchMode.singleCharacter
-                      ? 'Find'
-                      : 'Find words containing',
-            );
+            return TaiText.appBarTitle(
+                state.targetLetter == null
+                    ? 'Character Search Game'
+                    : state.searchMode == SearchMode.singleCharacter
+                        ? 'Find'
+                        : 'Find words containing',
+                context);
           },
         ),
         actions: [
@@ -84,7 +89,7 @@ class LetterGrid extends StatelessWidget {
               spacing: 16,
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(0.0),
                   child: Column(
                     children: [
                       SizedBox(
@@ -190,9 +195,12 @@ class LetterGrid extends StatelessWidget {
       barrierDismissible: false, // User must tap button to close
       builder: (BuildContext dialogContext) {
         return AlertDialog(
-          title: const Text(
+          title: Text(
             'Congratulations!',
             textAlign: TextAlign.center,
+            style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                  fontWeight: FontWeight.bold,
+                ),
           ),
           content: Column(
             mainAxisSize: MainAxisSize.min,
@@ -200,15 +208,18 @@ class LetterGrid extends StatelessWidget {
             children: [
               Card(
                 clipBehavior: Clip.hardEdge,
+                shadowColor: Colors.black38,
+                elevation: 6.0,
                 child: Image.asset(
                   'assets/images/png/celebrate.png',
                   width: 200,
                   height: 200,
                 ),
               ),
-              const Text(
+              Text(
                 'You found them all!',
                 textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.bodyLarge,
               ),
             ],
           ),
@@ -255,26 +266,29 @@ class _SearchGridItem extends StatelessWidget {
         }
         context.read<LetterSearchCubit>().cellTapped(rowIndex, colIndex);
       },
-      child: Container(
-        margin: const EdgeInsets.all(2.0),
-        width: cellSize,
-        height: cellSize,
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
+      child: TaiCard(
+        child: Container(
+          // margin: const EdgeInsets.all(2.0),
           color: backgroundColor,
-          borderRadius: BorderRadius.circular(4.0),
-          border: Border.all(color: Colors.black26, width: 0.5),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.all(4.0),
-          child: Text(
-            cell.letter,
-            maxLines: 2,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Theme.of(context).colorScheme.onSurfaceVariant,
-              fontSize: fontSize,
-              fontWeight: FontWeight.bold,
+          width: cellSize,
+          height: cellSize,
+          alignment: Alignment.center,
+          // decoration: BoxDecoration(
+          //   color: backgroundColor,
+          //   borderRadius: BorderRadius.circular(8.0),
+          //   border: Border.all(color: Colors.black26, width: 0.5),
+          // ),
+          child: Padding(
+            padding: const EdgeInsets.all(4.0),
+            child: Text(
+              cell.letter,
+              maxLines: 2,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.onSurfaceVariant,
+                fontSize: fontSize,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
         ),
@@ -293,7 +307,7 @@ class _LetterSearchError extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          // mainAxisAlignment: MainAxisAlignment.center,
           spacing: 16,
           children: [
             Text(
@@ -301,12 +315,13 @@ class _LetterSearchError extends StatelessWidget {
               style: Theme.of(context).textTheme.titleLarge,
               textAlign: TextAlign.center,
             ),
-            Card(
-              clipBehavior: Clip.hardEdge,
+            TaiCard(
+              shadowColor: Colors.black,
+              elevation: 12,
               child: Image.asset(
                 'assets/images/png/sad-construction.png',
-                width: 200,
-                height: 200,
+                // width: 200,
+                // height: 200,
               ),
             ),
             const SizedBox(height: 20),

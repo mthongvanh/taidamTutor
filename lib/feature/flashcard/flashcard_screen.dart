@@ -4,6 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:taidam_tutor/core/data/characters/models/character.dart';
 import 'package:taidam_tutor/core/data/flashcards/models/flashcard_model.dart';
 import 'package:taidam_tutor/feature/flashcard/cubit/character_flashcards_cubit.dart';
+import 'package:taidam_tutor/utils/extensions/card_ext.dart';
+import 'package:taidam_tutor/utils/extensions/text_ext.dart';
 
 class CharacterFlashcardsScreen extends StatelessWidget {
   final Character characterModel;
@@ -17,7 +19,10 @@ class CharacterFlashcardsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Flashcards for '${characterModel.character}'"),
+        title: TaiText.appBarTitle(
+          "Words with ${characterModel.character}",
+          context,
+        ),
       ),
       body: BlocProvider(
         create: (context) => CharacterFlashcardsCubit(characterModel),
@@ -63,7 +68,13 @@ class CharacterFlashcardsView extends StatelessWidget {
                 ),
               );
             }
-            return ListView.builder(
+            return GridView.builder(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 3,
+                childAspectRatio: 1,
+                crossAxisSpacing: 8,
+                mainAxisSpacing: 8,
+              ),
               itemCount: state.flashcards.length,
               itemBuilder: (context, index) {
                 final flashcard = state.flashcards[index];
@@ -72,6 +83,7 @@ class CharacterFlashcardsView extends StatelessWidget {
                   characterToHighlight: characterToHighlight,
                 );
               },
+              padding: const EdgeInsets.all(8),
             );
         }
       },
@@ -93,9 +105,7 @@ class FlashcardItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-      clipBehavior: Clip.hardEdge,
+    return TaiCard(
       child: InkWell(
         onTap: () {
           if (flashcard.audio != null && flashcard.audio!.isNotEmpty) {
@@ -103,35 +113,19 @@ class FlashcardItemWidget extends StatelessWidget {
           }
         },
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(8.0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text.rich(
-                TextSpan(
-                  children: [
-                    const TextSpan(
-                        text: "Front: ",
-                        style: TextStyle(fontWeight: FontWeight.bold)),
-                    TextSpan(
-                      text: flashcard.question,
-                    ),
-                  ],
-                ),
+              Text(
+                flashcard.question,
+                style: TextStyle(fontSize: 24),
+                maxLines: 2,
+                textAlign: TextAlign.center,
               ),
               const SizedBox(height: 8),
-              Text.rich(
-                TextSpan(
-                  children: [
-                    const TextSpan(
-                        text: "Back: ",
-                        style: TextStyle(fontWeight: FontWeight.bold)),
-                    TextSpan(
-                      text: flashcard.answer,
-                    ),
-                  ],
-                ),
-              ),
+              Text(flashcard.answer),
             ],
           ),
         ),

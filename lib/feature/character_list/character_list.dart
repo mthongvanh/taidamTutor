@@ -4,6 +4,8 @@ import 'package:taidam_tutor/core/data/characters/models/character.dart';
 import 'package:taidam_tutor/feature/character_list/cubit/character_list_cubit.dart';
 import 'package:taidam_tutor/feature/character_list/cubit/character_list_state.dart';
 import 'package:taidam_tutor/feature/flashcard/flashcard_screen.dart';
+import 'package:taidam_tutor/utils/extensions/card_ext.dart';
+import 'package:taidam_tutor/utils/extensions/text_ext.dart';
 
 class CharacterListPage extends StatelessWidget {
   const CharacterListPage({super.key});
@@ -18,11 +20,9 @@ class CharacterListPage extends StatelessWidget {
             'assets/images/png/flag.png',
           ),
         ),
-        title: Text(
+        title: TaiText.appBarTitle(
           'Tai Dam Characters',
-          style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+          context,
         ),
       ),
       body: BlocProvider<CharacterListCubit>(
@@ -141,9 +141,7 @@ class _CharacterListCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      clipBehavior: Clip.hardEdge,
-      elevation: 2.0,
+    return TaiCard(
       child: InkWell(
         onTap: onTap,
         child: Padding(

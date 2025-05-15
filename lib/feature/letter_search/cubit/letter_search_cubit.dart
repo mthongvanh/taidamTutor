@@ -37,7 +37,7 @@ class LetterSearchCubit extends Cubit<LetterSearchState> {
 
   void initializeGrid({
     required int size,
-    SearchMode searchMode = SearchMode.wordsContainingCharacter,
+    SearchMode searchMode = SearchMode.singleCharacter,
     int retryCount = 0,
   }) async {
     emit(
@@ -99,6 +99,7 @@ class LetterSearchCubit extends Cubit<LetterSearchState> {
         return;
       }
 
+      lettersPool.shuffle();
       final newGrid = _generateNewGrid(size, lettersPool, searchMode);
 
       emit(state.copyWith(
