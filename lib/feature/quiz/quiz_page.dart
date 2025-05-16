@@ -51,7 +51,10 @@ class QuizPage extends StatelessWidget {
                 selectedAnswerIndex: state.selectedAnswerIndex,
                 isCorrect: state.isCorrect,
               ),
-            QuizFinished() => _QuizFinished(state.score.toString()),
+            QuizFinished() => _QuizFinished(
+                state.score.toString(),
+                state.image,
+              ),
             QuizError() => TaiError(
                 state.message,
                 onRetry: () => context.read<QuizCubit>().resetQuiz(),
@@ -99,7 +102,8 @@ class QuizPage extends StatelessWidget {
             Text(
               text,
               style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
+                    // fontWeight: FontWeight.bold,
+                    color: Colors.white,
                   ),
             ),
             if (image?.isNotEmpty == true)
@@ -139,7 +143,11 @@ class _QuizLoaded extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.only(
+        left: 16.0,
+        bottom: 16.0,
+        right: 16.0,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -149,16 +157,10 @@ class _QuizLoaded extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           ..._buildQuestionContent(context),
-          const SizedBox(height: 32),
+          const SizedBox(height: 16),
           ...question.options.asMap().entries.map((entry) {
             return _buildAnswerOption(entry, context);
           }),
-          const SizedBox(height: 16),
-          if (selectedAnswerIndex != null)
-            ElevatedButton(
-              onPressed: () => context.read<QuizCubit>().nextQuestion(),
-              child: const Text('Next Question'),
-            ),
         ],
       ),
     );
@@ -169,9 +171,13 @@ class _QuizLoaded extends StatelessWidget {
 
     if (question.textQuestion != null) {
       content.add(
-        Text(
-          question.textQuestion!,
-          style: Theme.of(context).textTheme.headlineMedium,
+        Padding(
+          padding: const EdgeInsets.only(bottom: 16.0),
+          child: Text(
+            question.textQuestion!,
+            style: Theme.of(context).textTheme.displayLarge,
+            textAlign: TextAlign.center,
+          ),
         ),
       );
     }
@@ -190,6 +196,16 @@ class _QuizLoaded extends StatelessWidget {
         IconButton(
           icon: Icon(Icons.play_arrow),
           onPressed: () => player.play(AssetSource(question.audioPath!)),
+        ),
+      );
+    }
+
+    if (question.prompt != null) {
+      content.add(
+        Text(
+          question.prompt!,
+          style: Theme.of(context).textTheme.titleLarge,
+          textAlign: TextAlign.center,
         ),
       );
     }
@@ -233,7 +249,8 @@ class _QuizLoaded extends StatelessWidget {
 
 class _QuizFinished extends StatelessWidget {
   final String score;
-  const _QuizFinished(this.score);
+  final String? image;
+  const _QuizFinished(this.score, this.image);
 
   @override
   Widget build(BuildContext context) {
@@ -252,7 +269,7 @@ class _QuizFinished extends StatelessWidget {
           const SizedBox(height: 16),
           TaiCard.margin(
             child: Image.asset(
-              'assets/images/png/jump-joy.png',
+              image ?? 'assets/images/png/animals.png',
               // width: 200,
               // height: 200,
             ),

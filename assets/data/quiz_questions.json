@@ -1,0 +1,15 @@
+[
+    {
+        "id": "1",
+        "questionType": "multipleChoice",
+        "prompt": "",
+        "textQuestion": "",
+        "imagePath": "",
+        "audioPath": "",
+        "options": [],
+        "correctAnswerIndex": 0,
+        "explanation": "",
+        "hints": [],
+        "tags": []
+    }
+]

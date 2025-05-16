@@ -93,7 +93,14 @@ class App extends StatelessWidget {
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                     )
-                  : null,
+                  : LinearGradient(
+                      colors: [
+                        const Color.fromARGB(80, 42, 84, 112),
+                        const Color.fromARGB(80, 66, 65, 119),
+                      ],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
             ),
             child: Center(
               child: _widgetOptions.elementAt(state),
@@ -108,20 +115,20 @@ class App extends StatelessWidget {
                 label: 'Characters',
               ),
               BottomNavigationBarItem(
+                icon: Icon(Icons.search_outlined),
+                activeIcon: Icon(Icons.search),
+                label: 'Finder',
+              ),
+              BottomNavigationBarItem(
                 icon: Icon(Icons.quiz_outlined),
                 activeIcon: Icon(Icons.quiz),
                 label: 'Quiz',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.search_outlined),
-                activeIcon: Icon(Icons.search),
-                label: 'Game',
               ),
             ],
             currentIndex: state,
             // selectedItemColor:
             //     Theme.of(context).primaryColor, // Or your preferred color
-            unselectedItemColor: Colors.grey.shade700,
+            unselectedItemColor: Colors.grey.shade500,
             onTap: context.read<AppCubit>().onItemTapped,
             showUnselectedLabels: true,
           ),
@@ -132,7 +139,7 @@ class App extends StatelessWidget {
 
   static final List<Widget> _widgetOptions = <Widget>[
     CharacterListPage(),
-    QuizPage(),
     LetterSearchGame(),
+    QuizPage(),
   ];
 }

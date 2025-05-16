@@ -51,7 +51,19 @@ class QuizLoaded extends QuizState {
 
 class QuizFinished extends QuizState {
   final int score;
-  const QuizFinished(this.score);
+  final String? image;
+
+  const QuizFinished(this.score, {this.image});
+
+  QuizFinished copyWith({
+    int? score,
+    String? image,
+  }) {
+    return QuizFinished(
+      score ?? this.score,
+      image: image ?? this.image,
+    );
+  }
 
   @override
   List<Object?> get props => [score];

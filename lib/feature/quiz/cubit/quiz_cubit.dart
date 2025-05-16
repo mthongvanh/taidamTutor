@@ -1,40 +1,52 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:taidam_tutor/core/data/characters/character_repository.dart';
+import 'package:taidam_tutor/core/di/dependency_manager.dart';
 import 'package:taidam_tutor/feature/quiz/core/data/models/quiz_question.dart';
+import 'package:taidam_tutor/feature/quiz/core/utils/character_quiz_question_generator.dart';
 import 'package:taidam_tutor/feature/quiz/cubit/quiz_state.dart';
+
+enum QuizMode { character }
 
 // --- Quiz Cubit ---
 class QuizCubit extends Cubit<QuizState> {
   QuizCubit() : super(QuizInitial()) {
-    loadQuestion();
+    initQuiz();
   }
 
   // Sample questions - replace with your actual data source
-  final List<QuizQuestion> _allQuestions = [
-    QuizQuestion(
-      id: '1',
-      textQuestion: 'What is this character: ກ?',
-      options: ['ก (kai)', 'ข (khai)', 'ค (khuai)', 'ง (ngua)'],
-      correctAnswerIndex: 0,
-    ),
-    QuizQuestion(
-      id: '2',
-      // imagePath: 'assets/images/your_image.png', // Example
-      textQuestion: 'Which sound does this represent?',
-      audioPath:
-          'assets/audio/sample_sound.mp3', // Example: ensure you have this asset
-      options: ['Sound A', 'Sound B', 'Sound C', 'Sound D'],
-      correctAnswerIndex: 1,
-    ),
-    QuizQuestion(
-      id: '3',
-      textQuestion: 'What is the Tai Dam word for "water"?',
-      options: ['ນ້ຳ (nam)', 'ດິນ (din)', 'ໄຟ (fai)', 'ລົມ (lom)'],
-      correctAnswerIndex: 0,
-    ),
-  ];
-  
+  final List<QuizQuestion> _allQuestions = [];
+
   int _currentQuestionIndex = 0;
   int _currentScore = 0;
+
+  void initQuiz() {
+    emit(QuizInitial());
+    _currentQuestionIndex = 0;
+    _currentScore = 0;
+    createQuestions();
+    // Load the first question
+    loadQuestion();
+  }
+
+  void createQuestions() async {
+    // This function can be used to create questions dynamically
+    // For example, you can fetch from an API or generate based on some logic
+    final characters = dm.get<CharacterRepository>();
+    final allCharacters = await characters.getCharacters();
+    final questionGenerator = CharacterQuizQuestionGenerator();
+    final questions = <QuizQuestion>[];
+    allCharacters.shuffle();
+    for (var character in allCharacters.take(10).toList()) {
+      final question = questionGenerator.generateQuestionFromCharacter(
+        character,
+        allCharacters,
+        numberOfOptions: 4,
+      );
+      questions.add(question);
+    }
+    _allQuestions.clear();
+    _allQuestions.addAll(questions);
+  }
 
   Future<void> loadQuestion() async {
     emit(QuizLoading());
@@ -47,10 +59,27 @@ class QuizCubit extends Cubit<QuizState> {
             score: _currentScore));
       } else {
         // No more questions - could emit a QuizFinished state
-        emit(QuizFinished(_currentScore)); // Or a specific "QuizFinished" state
+        emit(
+          QuizFinished(
+            _currentScore,
+            image: _imageForScore(
+              _currentScore / _allQuestions.length.toDouble(),
+            ),
+          ),
+        ); // Or a specific "QuizFinished" state
       }
     } catch (e) {
       emit(QuizError('Failed to load question: ${e.toString()}'));
+    }
+  }
+
+  String _imageForScore(double percentage) {
+    if (percentage > 0.8) {
+      return 'assets/images/png/jump-joy.png';
+    } else if (percentage > 0.5) {
+      return 'assets/images/png/studying.png';
+    } else {
+      return 'assets/images/png/sad-face.png';
     }
   }
 
@@ -67,6 +96,12 @@ class QuizCubit extends Cubit<QuizState> {
         isCorrect: isCorrect,
         score: _currentScore,
       ));
+
+      // Optionally, you can add a delay before moving to the next question
+      // to show the user that they got it right.
+      Future.delayed(const Duration(seconds: 2), () {
+        nextQuestion();
+      });
     }
   }
 
@@ -80,6 +115,6 @@ class QuizCubit extends Cubit<QuizState> {
   void resetQuiz() {
     _currentQuestionIndex = 0;
     _currentScore = 0;
-    loadQuestion();
+    initQuiz();
   }
 }

@@ -116,7 +116,7 @@
     "image": "a16",
     "characterType": 1,
     "highLow": "low",
-    "sound": "ny",
+    "sound": "nh",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -127,7 +127,7 @@
     "image": "a17",
     "characterType": 1,
     "highLow": "high",
-    "sound": "ny",
+    "sound": "nh",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -440,6 +440,18 @@
     "characterClass": "special"
   },
   {
+    "characterId": 66,
+    "character": "\uaab0",
+    "example": "ꪁꪰ",
+    "audio": "",
+    "image": "",
+    "characterType": 0,
+    "highLow": "",
+    "sound": "ah",
+    "prePost": "pre",
+    "characterClass": "vowel"
+  },
+  {
     "characterId": 48,
     "character": "\uaab1",
     "example": "ꪁꪱ",
@@ -609,35 +621,41 @@
   },
   {
     "characterId": 63,
-    "character": "ꪹꪁꪸ",
+    "character": "\uaab9\uaab8",
+    "example": "ꪹꪁꪸ",
     "audio": "b82a-vowel",
     "image": "b82",
     "characterType": 0,
     "highLow": "",
     "sound": "eh",
     "prePost": "pre",
-    "characterClass": "vowel-combo"
+    "characterClass": "vowel-combo",
+    "regEx": "\\uaab9.{1}\\uaab8"
   },
   {
     "characterId": 62,
-    "character": "ꪹꪁꪷ",
+    "character": "\uaab9\uaab7",
+    "example": "ꪹꪁꪷ",
     "audio": "b81c-vowel",
     "image": "b81",
     "characterType": 0,
     "highLow": "",
     "sound": "oe",
     "prePost": "pre",
-    "characterClass": "vowel-combo"
+    "characterClass": "vowel-combo",
+    "regEx": "\\uaab9.{1}\\uaab7"
   },
   {
     "characterId": 64,
-    "character": "ꪹꪁꪱ",
+    "character": "\uaab9\uaab1",
+    "example": "ꪹꪁꪱ",
     "audio": "b84b-vowel",
     "image": "b84",
     "characterType": 2,
     "highLow": "",
     "sound": "ah-oo",
     "prePost": "pre",
-    "characterClass": "vowel-combo"
+    "characterClass": "vowel-combo",
+    "regEx": "\\uaab9.{1}\\uaab1"
   }
 ]
