@@ -1,4 +1,4 @@
-package com.example.taidam_tutor
+package com.thongvanh.taidam_tutor
 
 import io.flutter.embedding.android.FlutterActivity
 
