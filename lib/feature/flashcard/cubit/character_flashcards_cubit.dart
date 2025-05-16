@@ -21,11 +21,18 @@ class CharacterFlashcardsCubit extends Cubit<CharacterFlashcardsState> {
       final flashcards = await _flashcardRepository.getFlashcards();
 
       // Filter flashcards based on the character model
-      final filteredFlashcards = flashcards
-          .where((flashcard) =>
-              flashcard.question.contains(characterModel.character) ||
-              flashcard.answer.contains(characterModel.character))
-          .toList();
+      final filteredFlashcards = flashcards.where(
+        (flashcard) {
+          if (characterModel.characterClass == 'vowel-combo') {
+            final regEx = RegExp(characterModel.regEx ?? '');
+            return regEx.hasMatch(flashcard.question) ||
+                regEx.hasMatch(flashcard.answer);
+          } else {
+            return flashcard.question.contains(characterModel.character) ||
+                flashcard.answer.contains(characterModel.character);
+          }
+        },
+      ).toList();
 
       emit(state.copyWith(
         status: CharacterFlashcardsStatus.success,

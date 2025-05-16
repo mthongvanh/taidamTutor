@@ -28,8 +28,11 @@ class Character extends Equatable {
   /// For vowels, whether it comes before or after the consonant.
   final String? prePost;
 
-  //// Whether the character is a vowel, consonant, or special character.
+  //// Whether the character is a vowel, vowel-combo, consonant, or special character.
   final String characterClass;
+
+  /// Regular expression for matching the character.
+  final String? regEx;
 
   const Character({
     required this.characterId,
@@ -41,6 +44,7 @@ class Character extends Equatable {
     required this.characterClass,
     this.highLow,
     this.prePost,
+    this.regEx,
   });
 
   factory Character.fromJson(Map<String, dynamic> json) =>
@@ -59,5 +63,6 @@ class Character extends Equatable {
         highLow,
         prePost,
         characterClass,
+        regEx,
       ];
 }

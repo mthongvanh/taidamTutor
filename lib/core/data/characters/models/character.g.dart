@@ -16,6 +16,7 @@ Character _$CharacterFromJson(Map<String, dynamic> json) => Character(
       characterClass: json['characterClass'] as String,
       highLow: json['highLow'] as String?,
       prePost: json['prePost'] as String?,
+      regEx: json['regEx'] as String?,
     );
 
 Map<String, dynamic> _$CharacterToJson(Character instance) => <String, dynamic>{
@@ -28,4 +29,5 @@ Map<String, dynamic> _$CharacterToJson(Character instance) => <String, dynamic>{
       'highLow': instance.highLow,
       'prePost': instance.prePost,
       'characterClass': instance.characterClass,
+      'regEx': instance.regEx,
     };
