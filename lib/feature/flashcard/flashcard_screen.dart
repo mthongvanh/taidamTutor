@@ -54,7 +54,7 @@ class CharacterFlashcardsView extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
-                  "Failed to load flashcards: ${state.errorMessage ?? 'Unknown error'}",
+                  "Failed to load: ${state.errorMessage ?? 'Unknown error'}",
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -63,7 +63,7 @@ class CharacterFlashcardsView extends StatelessWidget {
             if (state.flashcards.isEmpty) {
               return Center(
                 child: Text(
-                  "No flashcards found containing the character '$characterToHighlight'.",
+                  "No words found containing the character '$characterToHighlight'.",
                   textAlign: TextAlign.center,
                 ),
               );
