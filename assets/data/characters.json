@@ -17,7 +17,7 @@
     "image": "a2",
     "characterType": 1,
     "highLow": "high",
-    "sound": "k",
+    "sound": "'k",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -39,7 +39,7 @@
     "image": "a8",
     "characterType": 1,
     "highLow": "high",
-    "sound": "kh",
+    "sound": "'kh",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -61,13 +61,13 @@
     "image": "a11",
     "characterType": 1,
     "highLow": "high",
-    "sound": "ng",
+    "sound": "'ng",
     "prePost": "",
     "characterClass": "consonant"
   },
   {
     "characterId": 12,
-    "character": "ꪌ",
+    "character": "ꪊ",
     "audio": "a12",
     "image": "a12",
     "characterType": 1,
@@ -83,7 +83,7 @@
     "image": "a13",
     "characterType": 1,
     "highLow": "high",
-    "sound": "ch",
+    "sound": "'ch",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -105,7 +105,7 @@
     "image": "a15",
     "characterType": 1,
     "highLow": "high",
-    "sound": "s",
+    "sound": "'s",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -127,7 +127,7 @@
     "image": "a17",
     "characterType": 1,
     "highLow": "high",
-    "sound": "nh",
+    "sound": "'nh",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -149,7 +149,7 @@
     "image": "a19",
     "characterType": 1,
     "highLow": "high",
-    "sound": "d",
+    "sound": "'d",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -171,7 +171,7 @@
     "image": "a21",
     "characterType": 1,
     "highLow": "high",
-    "sound": "th",
+    "sound": "'th",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -193,7 +193,7 @@
     "image": "a23",
     "characterType": 1,
     "highLow": "high",
-    "sound": "t",
+    "sound": "'t",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -215,7 +215,7 @@
     "image": "a25",
     "characterType": 1,
     "highLow": "high",
-    "sound": "n",
+    "sound": "'n",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -237,7 +237,7 @@
     "image": "a27",
     "characterType": 1,
     "highLow": "high",
-    "sound": "b",
+    "sound": "'b",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -259,7 +259,7 @@
     "image": "a29",
     "characterType": 1,
     "highLow": "high",
-    "sound": "p",
+    "sound": "'p",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -281,7 +281,7 @@
     "image": "a31",
     "characterType": 1,
     "highLow": "high",
-    "sound": "f",
+    "sound": "'f",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -303,7 +303,7 @@
     "image": "a33",
     "characterType": 1,
     "highLow": "high",
-    "sound": "m",
+    "sound": "'m",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -325,7 +325,7 @@
     "image": "a35",
     "characterType": 1,
     "highLow": "high",
-    "sound": "y",
+    "sound": "'y",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -347,7 +347,7 @@
     "image": "a37",
     "characterType": 1,
     "highLow": "high",
-    "sound": "l",
+    "sound": "'l",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -369,7 +369,7 @@
     "image": "a39",
     "characterType": 1,
     "highLow": "high",
-    "sound": "v",
+    "sound": "'v",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -391,7 +391,18 @@
     "image": "a41",
     "characterType": 1,
     "highLow": "high",
-    "sound": "h",
+    "sound": "'h",
+    "prePost": "",
+    "characterClass": "consonant"
+  },
+  {
+    "characterId": 42,
+    "character": "ꪮ",
+    "audio": "",
+    "image": "",
+    "characterType": 1,
+    "highLow": "low",
+    "sound": "ʔ(glottal)",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -402,18 +413,7 @@
     "image": "a43",
     "characterType": 1,
     "highLow": "high",
-    "sound": "glottal",
-    "prePost": "",
-    "characterClass": "consonant"
-  },
-  {
-    "characterId": 65,
-    "character": "ꪮ",
-    "audio": "",
-    "image": "",
-    "characterType": 1,
-    "highLow": "low",
-    "sound": "glottal",
+    "sound": "'ʔ(glottal)",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -442,19 +442,19 @@
   {
     "characterId": 66,
     "character": "\uaab0",
-    "example": "ꪁꪰ",
+    "example": "ꪰ",
     "audio": "",
     "image": "",
     "characterType": 0,
     "highLow": "",
     "sound": "ah",
-    "prePost": "pre",
+    "prePost": "super",
     "characterClass": "vowel"
   },
   {
     "characterId": 48,
     "character": "\uaab1",
-    "example": "ꪁꪱ",
+    "example": "-ꪱ",
     "audio": "b48b-vowel",
     "image": "b48",
     "characterType": 0,
@@ -466,19 +466,19 @@
   {
     "characterId": 49,
     "character": "\uaab2",
-    "example": "ꪁꪲ",
+    "example": "ꪲ",
     "audio": "b51a-vowel",
     "image": "b51",
     "characterType": 0,
     "highLow": "",
     "sound": "ee",
-    "prePost": "post",
+    "prePost": "super",
     "characterClass": "vowel"
   },
   {
     "characterId": 51,
     "character": "\uaab3",
-    "example": "ꪁꪳ",
+    "example": "ꪳ",
     "audio": "b57a-vowel",
     "image": "b57",
     "characterType": 0,
@@ -490,19 +490,19 @@
   {
     "characterId": 50,
     "character": "\uaab4",
-    "example": "ꪁꪴ",
+    "example": "ꪴ",
     "audio": "b54a-vowel",
     "image": "b54",
     "characterType": 0,
     "highLow": "",
     "sound": "oo",
-    "prePost": "post",
+    "prePost": "sub",
     "characterClass": "vowel"
   },
   {
     "characterId": 60,
     "character": "\uaab5",
-    "example": "ꪵꪁ",
+    "example": "ꪵ-",
     "audio": "b75b-vowel",
     "image": "b75",
     "characterType": 0,
@@ -514,7 +514,7 @@
   {
     "characterId": 55,
     "character": "\uaab6",
-    "example": "ꪶ",
+    "example": "ꪶ-",
     "audio": "b67b-vowel",
     "image": "b67",
     "characterType": 0,
@@ -526,31 +526,31 @@
   {
     "characterId": 53,
     "character": "\uaab7",
-    "example": "ꪁꪷ",
+    "example": "ꪷ",
     "audio": "b61c-vowel",
     "image": "b61",
     "characterType": 0,
     "highLow": "",
     "sound": "aw",
-    "prePost": "post",
+    "prePost": "super",
     "characterClass": "vowel"
   },
   {
     "characterId": 52,
     "character": "\uaab8",
-    "example": "ꪁꪸ",
+    "example": "ꪸ",
     "audio": "b59b-vowel",
     "image": "b59",
     "characterType": 2,
     "highLow": "",
-    "sound": "ee-a",
-    "prePost": "post",
+    "sound": "ie",
+    "prePost": "super",
     "characterClass": "vowel"
   },
   {
     "characterId": 61,
     "character": "\uaab9",
-    "example": "ꪹꪁ",
+    "example": "ꪹ-",
     "audio": "b78a-vowel",
     "image": "b78",
     "characterType": 2,
@@ -562,19 +562,19 @@
   {
     "characterId": 54,
     "character": "\uaaba",
-    "example": "ꪁꪺ",
+    "example": "-ꪺ",
     "audio": "b64a-vowel",
     "image": "b64",
     "characterType": 2,
     "highLow": "",
-    "sound": "oo-a",
+    "sound": "ua",
     "prePost": "post",
     "characterClass": "vowel"
   },
   {
     "characterId": 57,
     "character": "\uaabb",
-    "example": "ꪻꪁ",
+    "example": "ꪻ-",
     "audio": "b70a-vowel",
     "image": "b70",
     "characterType": 2,
@@ -586,7 +586,7 @@
   {
     "characterId": 56,
     "character": "\uaabc",
-    "example": "ꪼꪁ",
+    "example": "ꪼ-",
     "audio": "b69a-vowel",
     "image": "b69",
     "characterType": 2,
@@ -598,7 +598,7 @@
   {
     "characterId": 59,
     "character": "\uaabd",
-    "example": "ꪁꪽ",
+    "example": "-ꪽ",
     "audio": "b73b-vowel",
     "image": "b73",
     "characterType": 1,
@@ -610,13 +610,13 @@
   {
     "characterId": 58,
     "character": "\uaabe",
-    "example": "ꪁꪾ",
+    "example": "ꪾ",
     "audio": "b72a-vowel",
     "image": "b72",
     "characterType": 1,
     "highLow": "",
     "sound": "am",
-    "prePost": "post",
+    "prePost": "super",
     "characterClass": "vowel-final"
   },
   {
@@ -628,7 +628,7 @@
     "characterType": 0,
     "highLow": "",
     "sound": "eh",
-    "prePost": "pre",
+    "prePost": "pre-super",
     "characterClass": "vowel-combo",
     "regEx": "\\uaab9.{1}\\uaab8"
   },
@@ -641,21 +641,33 @@
     "characterType": 0,
     "highLow": "",
     "sound": "oe",
-    "prePost": "pre",
+    "prePost": "pre-super",
     "characterClass": "vowel-combo",
     "regEx": "\\uaab9.{1}\\uaab7"
   },
   {
     "characterId": 64,
     "character": "\uaab9\uaab1",
-    "example": "ꪹꪁꪱ",
+    "example": "ꪹ-ꪱ",
     "audio": "b84b-vowel",
     "image": "b84",
     "characterType": 2,
     "highLow": "",
     "sound": "ah-oo",
-    "prePost": "pre",
+    "prePost": "pre-post",
     "characterClass": "vowel-combo",
     "regEx": "\\uaab9.{1}\\uaab1"
+  },
+  {
+    "characterId": 65,
+    "character": "ꪮ",
+    "example": "-ꪮ-",
+    "audio": "",
+    "image": "",
+    "characterType": 1,
+    "highLow": "",
+    "sound": "o",
+    "prePost": "medial",
+    "characterClass": "vowel"
   }
 ]

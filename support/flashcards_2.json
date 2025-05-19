@@ -1,0 +1,2930 @@
+[
+    {
+        "question": "ꪀꪚꪾ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kap̚˦˥]"
+            }
+        ],
+        "answer": "with",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪀꪫꪱꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kʷaːŋ˨]"
+            }
+        ],
+        "answer": "deer",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪀꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kaː˨]"
+            }
+        ],
+        "answer": "crow",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪀꪳ꪿",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kɨː˦˥]"
+            }
+        ],
+        "answer": "continue\npersevere",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪀꪾꪚ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kap̚˦˥]"
+            }
+        ],
+        "answer": "with",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪀ꪿ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kaː˦˥]"
+            }
+        ],
+        "answer": "place",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪁꪫꪱꪣ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kʷaːm˥]"
+            }
+        ],
+        "answer": "word\nlanguage",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪁꪫꪱꪥ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kʷaːj˥]"
+            }
+        ],
+        "answer": "water buffalo",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪁꪫ꪿ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kʷaː˦]"
+            }
+        ],
+        "answer": "to visit",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪁꪮꪉꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kɔŋ˧˩ˀ]"
+            }
+        ],
+        "answer": "gong",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪁꪲꪣ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kim˥]"
+            }
+        ],
+        "answer": "pliers, tongs",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪁꪳꪒ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kɨt̚˦]"
+            }
+        ],
+        "answer": "to think",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪁ꪿ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kaː˦]"
+            }
+        ],
+        "answer": "price",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪁ꫁ꪮꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kɔŋ˧˩ˀ]"
+            }
+        ],
+        "answer": "gong",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪁ꫁ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kaː˧˩ˀ]"
+            }
+        ],
+        "answer": "to trade",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪄꪫꪱꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xʷaːn˨]"
+            }
+        ],
+        "answer": "axe",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪄꪫ꪿ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xʷaː˦˥]"
+            }
+        ],
+        "answer": "lock",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪄꪱꪣ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xaːm˨]"
+            }
+        ],
+        "answer": "tamarind",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪄꪱꪥ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xaːj˨]"
+            }
+        ],
+        "answer": "to sell",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪄꪳꪙꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xɨn˨˩ˀ]"
+            }
+        ],
+        "answer": "to rise\nto go up",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪄꪳ꫁ꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xɨn˨˩ˀ]"
+            }
+        ],
+        "answer": "to rise\nto go up",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪄꪷ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xɔː˨]"
+            }
+        ],
+        "answer": "hook",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪄ꫁ꪮꪥ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xɔj˨˩ˀ]"
+            }
+        ],
+        "answer": "I\nme",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪄꪮꪥꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xɔj˨˩ˀ]"
+            }
+        ],
+        "answer": "I\nme",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪄ꫁ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xaː˨˩ˀ]"
+            }
+        ],
+        "answer": "to kill",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪄꪱꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xaː˨˩ˀ]"
+            }
+        ],
+        "answer": "to kill",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪅꪺꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xuə̯ʔ˦]"
+            }
+        ],
+        "answer": "tadpole",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪉꪮꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ŋɔʔ˦]"
+            }
+        ],
+        "answer": "to sprout\nto germinate",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪉꪴ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ŋuː˥]"
+            }
+        ],
+        "answer": "snake",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪉꪺ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ŋuə̯˥]"
+            }
+        ],
+        "answer": "ox\ncow",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪉ꪿ꪱꪥ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ŋaːj˦]"
+            }
+        ],
+        "answer": "easy; simple",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪊꪮꪚ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[t͡ɕɔp̚˦˥]"
+            }
+        ],
+        "answer": "hoe",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪊꪰ꪿ꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[t͡ɕaŋ˦˥]"
+            }
+        ],
+        "answer": "so; then",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪋꪰꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[t͡ɕaŋ˥]"
+            }
+        ],
+        "answer": "to hate\nto detest",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪋꪳ꪿",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[t͡ɕɨː˦]"
+            }
+        ],
+        "answer": "name",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪋ꪿ꪮꪥ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[t͡ɕɔj˦]"
+            }
+        ],
+        "answer": "to help\nto aid",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪋ꫁ꪮꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[t͡ɕɔŋ˧˩ˀ]"
+            }
+        ],
+        "answer": "lasso\nindustrious",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪋ꫁ꪱꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "t͡ɕaːŋ˧˩ˀ]"
+            }
+        ],
+        "answer": "elephant",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪋꪱꪉꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[t͡ɕaːŋ˧˩ˀ]"
+            }
+        ],
+        "answer": "elephant",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪎꪮꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[sɔŋ˨]"
+            }
+        ],
+        "answer": "two",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪎꪮꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[sɔn˨]"
+            }
+        ],
+        "answer": "to imitate",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪎꪱꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[saːʔ˦˥]"
+            }
+        ],
+        "answer": "pestle",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪎꪱꪣ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[saːm˨]"
+            }
+        ],
+        "answer": "three",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪎꪲꪚ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[sip̚˦˥]"
+            }
+        ],
+        "answer": "ten",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪎꪲꪫ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[siw˨]"
+            }
+        ],
+        "answer": "pimple",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪎꪲ꪿",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[siː˦˥]"
+            }
+        ],
+        "answer": "four",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪎꪲꫀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[siː˦˥]"
+            }
+        ],
+        "answer": "four",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪎꪳ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[sɨː˨]"
+            }
+        ],
+        "answer": "script\nlanguage",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪎꪴꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[suŋ˨]"
+            }
+        ],
+        "answer": "tall\nhigh",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪎꪴꪥ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[suj˨]"
+            }
+        ],
+        "answer": "to push",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪎ꪿ꪱꪫ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[saːw˦˥]"
+            }
+        ],
+        "answer": "to look for",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪏꪱꪥ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[saːj˥]"
+            }
+        ],
+        "answer": "sand",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪏꪳ꫁",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[sɨː˧˩ˀ]"
+            }
+        ],
+        "answer": "to buy",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪐꪱꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ɲaː˨˩ˀ]"
+            }
+        ],
+        "answer": "grass",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪐ꫁ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ɲaː˨˩ˀ]"
+            }
+        ],
+        "answer": "grass",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪑꪱꪣ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ɲaːm˥]"
+            }
+        ],
+        "answer": "time",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪑꪲꪚ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ɲip̚˦]"
+            }
+        ],
+        "answer": "to sew",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪑ꫁ꪮꪣ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ɲɔm˧˩ˀ]"
+            }
+        ],
+        "answer": "to dye",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪒꪚꪾ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[dap̚˦˥]"
+            }
+        ],
+        "answer": "to extinguish",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪒꪱꪫ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[daːw˨]"
+            }
+        ],
+        "answer": "star",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪒꪲ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[diː˨]"
+            }
+        ],
+        "answer": "good",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪒꪲꪒ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[dit̚˦˥]"
+            }
+        ],
+        "answer": "to flick\nto jump",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪒꪲꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[din˨]"
+            }
+        ],
+        "answer": "earth; soil",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪒꪴꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[duʔ˦˥]"
+            }
+        ],
+        "answer": "bone",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪒꪾꪚ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[dap̚˦˥]"
+            }
+        ],
+        "answer": "to extinguish",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪔꪰꪒ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[tat̚˦˥]"
+            }
+        ],
+        "answer": "to cut",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪔꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[taː˨]"
+            }
+        ],
+        "answer": "eye",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪔꪱꪥ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[taːj˨]"
+            }
+        ],
+        "answer": "to die",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪔꪴ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[tuː˨]"
+            }
+        ],
+        "answer": "door",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪔ꪿ꪱꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[taːŋ˦˥]"
+            }
+        ],
+        "answer": "different\nwindow",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪕꪮꪉꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[tɔŋ˧˩ˀ]"
+            }
+        ],
+        "answer": " abdomen\nstomach",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪕ꫁ꪮꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[tɔŋ˧˩ˀ]"
+            }
+        ],
+        "answer": " abdomen\nstomach",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪖꪲ꫁ꪣ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[tʰim˨˩ˀ]"
+            }
+        ],
+        "answer": "to discard\nto drop",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪖꪾ꫁",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[tʰam˨˩ˀ]"
+            }
+        ],
+        "answer": "cave; tunnel",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪘꪰꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[naŋ˨]"
+            }
+        ],
+        "answer": "skin; leather",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪘꪱꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[naː˨˩ˀ]"
+            }
+        ],
+        "answer": "face\nin font of; before\ncrossbow",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪘ꫁ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[naː˨˩ˀ]"
+            }
+        ],
+        "answer": "face\nin font of; before\ncrossbow",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪙꪮꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[nɔn˥]"
+            }
+        ],
+        "answer": "to lie down\nto sleep",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪙꪰꪉꫀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[naŋ˦]"
+            }
+        ],
+        "answer": "to sit",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪙꪰ꪿ꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[naŋ˦]"
+            }
+        ],
+        "answer": "to sit",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪙꪲ꫁",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[niː˧˩ˀ]"
+            }
+        ],
+        "answer": "this",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪙꪲ꫁ꪫ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[niw˧˩ˀ]"
+            }
+        ],
+        "answer": "finger, toe",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪙꪳ꪿ꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[nɨŋ˦]"
+            }
+        ],
+        "answer": "one",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪙꪾ꫁",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[nam˧˩ˀ]"
+            }
+        ],
+        "answer": "water",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪙꪾꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[nam˧˩ˀ]"
+            }
+        ],
+        "answer": "water",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪙ꫁ꪮꪥ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[nɔj˧˩ˀ]"
+            }
+        ],
+        "answer": "small, little; few",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪚꪮꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[bɔʔ˦˥]"
+            }
+        ],
+        "answer": "flower\nto teach\nto command",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪚꪲꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[bin˨]"
+            }
+        ],
+        "answer": "to fly",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪚꪺ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[buə̯˨]"
+            }
+        ],
+        "answer": "lotus",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪜꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[paː˨]"
+            }
+        ],
+        "answer": "fish",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪜꪱꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[paːʔ˦˥]"
+            }
+        ],
+        "answer": "mouth\nspeech",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪜꪲ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[piː˨]"
+            }
+        ],
+        "answer": "year",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪜꪲꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[piʔ˦˥]"
+            }
+        ],
+        "answer": "wing",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪜꪴ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[puː˨]"
+            }
+        ],
+        "answer": "crab",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪜꪺ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[puə̯˨]"
+            }
+        ],
+        "answer": "king",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪝꪴ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[puː˥]"
+            }
+        ],
+        "answer": "mountain\nbetel",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪝ꪿ꪮꪣ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[pɔm˦]"
+            }
+        ],
+        "answer": "apple",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪠꪰꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[faŋ˨]"
+            }
+        ],
+        "answer": "to bury",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪠꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[faː˨]"
+            }
+        ],
+        "answer": "lid\npartition",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪠꪴ꫁",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[fuː˨˩ˀ]"
+            }
+        ],
+        "answer": "person, people",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪠꪽ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[fan˨]"
+            }
+        ],
+        "answer": "to dream",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪠ꫁ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[faː˨˩ˀ]"
+            }
+        ],
+        "answer": "cloth",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪡꪱꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[faː˧˩ˀ]"
+            }
+        ],
+        "answer": "sky",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪡ꫁ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[faː˧˩ˀ]"
+            }
+        ],
+        "answer": "sky",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪢꪮꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[mɔn˨]"
+            }
+        ],
+        "answer": "pillow; cushion",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪢꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[maː˨]"
+            }
+        ],
+        "answer": "dog",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪢꪱꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[maːʔ˦˥]"
+            }
+        ],
+        "answer": "fruit",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪢꪲ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[miː˨]"
+            }
+        ],
+        "answer": "bear",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪢꪴ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[muː˨]"
+            }
+        ],
+        "answer": "pig; hog; boar",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪢ꫁ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[maː˨˩ˀ]"
+            }
+        ],
+        "answer": "to rise",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪣꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[maː˨˩ˀ]"
+            }
+        ],
+        "answer": "to come",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪣꪲ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[miː˥]"
+            }
+        ],
+        "answer": "to have",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪣꪳ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[mɨː˥]"
+            }
+        ],
+        "answer": "hand",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪣꪳꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[mɨŋ˥]"
+            }
+        ],
+        "answer": "you informal",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪣꪸ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[miə̯˥]"
+            }
+        ],
+        "answer": "wife",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪣ꫁ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[maː˧˩ˀ]"
+            }
+        ],
+        "answer": "horse",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪤꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[jaː˨]"
+            }
+        ],
+        "answer": "medicine",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪤ꫁ꪱꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[jaːn˨˩ˀ]"
+            }
+        ],
+        "answer": "to be afraid\nto fear",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪨꪰꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[laŋ˨]"
+            }
+        ],
+        "answer": "back\nbehind; after",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪨꪱꪥ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[laːj˨]"
+            }
+        ],
+        "answer": "many",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪩꪲꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[liŋ˥]"
+            }
+        ],
+        "answer": "monkey",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪩꪳꪣ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[lɨm˥]"
+            }
+        ],
+        "answer": "to forget",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪩꪴꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[luʔ˦]"
+            }
+        ],
+        "answer": "child",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪩꪺꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[luə̯ŋ˥]"
+            }
+        ],
+        "answer": "side, dimension\ndirection",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪪꪱꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[vaːn˨]"
+            }
+        ],
+        "answer": "sweet",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪪꪲ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[viː˨]"
+            }
+        ],
+        "answer": "comb",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪫꪱꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[vaːŋ˥]"
+            }
+        ],
+        "answer": "to leave, abandon, quit U+AAAB U+AAB1 U+AA89",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪫꪸꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[viə̯ʔ˦]"
+            }
+        ],
+        "answer": "work; job",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪫꪽ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[van˥]"
+            }
+        ],
+        "answer": "day",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪬꪮꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[hɔʔ˦˥]"
+            }
+        ],
+        "answer": "spear",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪬꪮꪣ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[hɔm˨]"
+            }
+        ],
+        "answer": "fragrant, nice-smelling",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪬꪮꪥ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[hɔj˨]"
+            }
+        ],
+        "answer": "mollusk",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪬꪴ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[huː˨]"
+            }
+        ],
+        "answer": "ear",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪬꪺ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[huə̯˨]"
+            }
+        ],
+        "answer": "head",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪬ꪿ꪱꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[haːn˦˥]"
+            }
+        ],
+        "answer": "goose",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪬ꫁ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[haː˨˩ˀ]"
+            }
+        ],
+        "answer": "five",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪬꪱꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[haː˨˩ˀ]"
+            }
+        ],
+        "answer": "five",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪭꪮꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[hɔʔ˦]"
+            }
+        ],
+        "answer": "squirrel",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪭꪮꪒ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[hɔt̚˦]"
+            }
+        ],
+        "answer": "to, at",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪭꪰꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[haŋ˥]"
+            }
+        ],
+        "answer": "nest",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪭꪴ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[huː˥]"
+            }
+        ],
+        "answer": "hole",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪭꪴ꫁",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[huː˧˩ˀ]"
+            }
+        ],
+        "answer": "to know",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪭꪴꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[huː˧˩ˀ]"
+            }
+        ],
+        "answer": "to know",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪭꪮꪉꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[hɔŋ˧˩ˀ]"
+            }
+        ],
+        "answer": "",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪭ꫁ꪮꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[hɔŋ˧˩ˀ]"
+            }
+        ],
+        "answer": "to shout, to yell\nto cry",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪭꪮꪥꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[hɔj˧˩ˀ]"
+            }
+        ],
+        "answer": "hundred",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪭ꫁ꪮꪥ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[hɔj˧˩ˀ]"
+            }
+        ],
+        "answer": "hundred",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪮꪱꪚ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ʔaːp̚˦˥]"
+            }
+        ],
+        "answer": "to bathe",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪮꪲꪒ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ʔit̚˦˥]"
+            }
+        ],
+        "answer": "grapes",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꫛ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kon˥]"
+            }
+        ],
+        "answer": "person",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꫜ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[nɨŋ˦]"
+            }
+        ],
+        "answer": "one",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪀꪷꪵꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kɔː˨.kɛː˨]"
+            }
+        ],
+        "answer": "pigeon",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪄꪲ꫁ꪹꪐ꫁",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xiː˨˩ˀ.ɲɨə̯˨˩ˀ]"
+            }
+        ],
+        "answer": "garbage",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪄꪷꪄꪫ꪿ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xɔː˨.xʷaː˦˥]"
+            }
+        ],
+        "answer": "key",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪊꪰꪀꪊ꪿ꪽ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[t͡ɕaʔ˦˥.t͡ɕan˦˥]"
+            }
+        ],
+        "answer": "cicada",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪎꪱꪡ꫁ꪮꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[saː˨.fɔŋ˧˩ˀ]"
+            }
+        ],
+        "answer": "soap",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪙꪾ꫁ꪹꪚꪸ꫁",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[nam˧˩ˀ.beː˨˩ˀ]"
+            }
+        ],
+        "answer": "ocean, sea",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪛꪱꪜꪺ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[baː˥.puə̯˨]"
+            }
+        ],
+        "answer": "queen",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪣꪳ꫁ꪝꪴꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[mɨː˧˩ˀ.puʔ˦]"
+            }
+        ],
+        "answer": "tomorrow",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪩꪴꪀꪋꪱꪥ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[luʔ˦.t͡ɕaːj˥]"
+            }
+        ],
+        "answer": "son",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪩꪴꪀꪑꪲꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[luʔ˦.ɲiŋ˥]"
+            }
+        ],
+        "answer": "daughter",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪫꪸ꫁ꪒꪙꪱꪣ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[viə̯t̚˦.naːm˥]"
+            }
+        ],
+        "answer": "Vietnam",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪬꪱꪻꪊ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[haː˨.t͡ɕaɰ˨]"
+            }
+        ],
+        "answer": "breathe",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪮꪮꪙꫀꪙꪮꪥꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ʔɔn˦˥.nɔj˧˩ˀ]"
+            }
+        ],
+        "answer": "",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪮ꪿ꪮꪙꪙ꫁ꪮꪥ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ʔɔn˦˥.nɔj˧˩ˀ]"
+            }
+        ],
+        "answer": "infant; baby",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪵꪄꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xɛʔ˦˥]"
+            }
+        ],
+        "answer": "guest\nto call",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪵꪄꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xɛŋ˨]"
+            }
+        ],
+        "answer": "hard; rigid",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪵꪄꪫ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xɛw˨]"
+            }
+        ],
+        "answer": "green",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪵꪋ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[t͡ɕɛː˥]"
+            }
+        ],
+        "answer": "tea",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪵꪒꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[dɛn˨]"
+            }
+        ],
+        "answer": "border",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪵꪔꪣꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[tɛm˨˩ˀ]"
+            }
+        ],
+        "answer": "to write\nto draw",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪵꪔ꫁ꪣ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[tɛm˨˩ˀ]"
+            }
+        ],
+        "answer": "to write\nto draw",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪵꪜꪒ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[pɛt̚˦˥]"
+            }
+        ],
+        "answer": "eight",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪵꪝꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[pɛʔ˦]"
+            }
+        ],
+        "answer": "clean",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪵꪣꪫ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[mɛw˥]"
+            }
+        ],
+        "answer": "cat",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪵꪣ꪿",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[mɛː˦]"
+            }
+        ],
+        "answer": "female",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪵꪣꫀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[mɛː˦]"
+            }
+        ],
+        "answer": "female",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪵꪮ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ʔɛː˨]"
+            }
+        ],
+        "answer": "to want",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪵꪮꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ʔɛʔ˦˥]"
+            }
+        ],
+        "answer": "brain\nyoke",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪵꪮꪚ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ʔɛp̚˦˥]"
+            }
+        ],
+        "answer": "to learn",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪶꪀꪚ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kop̚˦˥]"
+            }
+        ],
+        "answer": "frog\nplaner",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪶꪁꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kon˥]"
+            }
+        ],
+        "answer": "person\nstir",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪶꪄꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xon˨]"
+            }
+        ],
+        "answer": "hair\nfeather",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪶꪊꪚ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[t͡ɕop̚˦˥]"
+            }
+        ],
+        "answer": "hoe",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪶꪔꪒ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[tot̚˦˥]"
+            }
+        ],
+        "answer": "to fart",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪶꪙꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[noʔ˦]"
+            }
+        ],
+        "answer": "bird",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪶꪙꪣ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[nom˥]"
+            }
+        ],
+        "answer": "breast\nmilk",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪶꪠꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[fon˨]"
+            }
+        ],
+        "answer": "rain",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪶꪣꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[moŋ˥]"
+            }
+        ],
+        "answer": "hour\nclock",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪶꪣꪒ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[mot̚˦]"
+            }
+        ],
+        "answer": "ant",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪶꪩꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[loŋ˥]"
+            }
+        ],
+        "answer": "to descend; to go down\ndown; downwards",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪶꪩꪣ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[lom˥]"
+            }
+        ],
+        "answer": "wind",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪶꪬꪀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[hoʔ˦˥]"
+            }
+        ],
+        "answer": "six",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪀꪱꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kaw˨˩ˀ]"
+            }
+        ],
+        "answer": "nine",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪀ꫁ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kaw˨˩ˀ]"
+            }
+        ],
+        "answer": "nine",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪁꪷ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kəː˥]"
+            }
+        ],
+        "answer": "flag",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪄꪸꪣ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xem˨]"
+            }
+        ],
+        "answer": "needle",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪄ꫁ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xaw˨˩ˀ]"
+            }
+        ],
+        "answer": "rice\nto enter\nentering; inside",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪉꪷꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ŋən˥]"
+            }
+        ],
+        "answer": "silver\nmoney",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪊꪸꪒ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[t͡ɕet̚˦˥]"
+            }
+        ],
+        "answer": "seven",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪊꪱꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[t͡ɕaw˨˩ˀ]"
+            }
+        ],
+        "answer": "you",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪊ꫁ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[t͡ɕaw˨˩ˀ]"
+            }
+        ],
+        "answer": "you",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪋꪷ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[t͡ɕəː˥]"
+            }
+        ],
+        "answer": "time\nhour, oclock\nwhen",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪎ꫁",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[sɨə̯˨˩ˀ]"
+            }
+        ],
+        "answer": "shirt",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪎꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[sɨə̯˨˩ˀ]"
+            }
+        ],
+        "answer": "shirt",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪐ꫁",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ɲɨə̯˨˩ˀ]"
+            }
+        ],
+        "answer": "residue",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪚꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[bɨə̯n˨]"
+            }
+        ],
+        "answer": "moon\nmonth",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪚꪱꫀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[baw˦˥]"
+            }
+        ],
+        "answer": "not",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪚ꪿ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[baw˦˥]"
+            }
+        ],
+        "answer": "not",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪜꪸꪒ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[pet̚˦˥]"
+            }
+        ],
+        "answer": "duck",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪜꪸꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[pen˨]"
+            }
+        ],
+        "answer": "to be\nto become",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪣꪉ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[mɨə̯ŋ˥]"
+            }
+        ],
+        "answer": "city, country",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪣ꪿ꪥ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[mɨə̯j˦]"
+            }
+        ],
+        "answer": "weary\nweak",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪫꪱꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[vaw˧˩ˀ]"
+            }
+        ],
+        "answer": "to say; to speak",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪫ꫁ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[vaw˧˩ˀ]"
+            }
+        ],
+        "answer": "to say; to speak",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪬꪸꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[hen˨]"
+            }
+        ],
+        "answer": "to see",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪬ꪿",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[hɨə̯˦˥]"
+            }
+        ],
+        "answer": "perspiration",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪭ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[hɨə̯˥]"
+            }
+        ],
+        "answer": "boat",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪻꪊ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[t͡ɕaɰ˨]"
+            }
+        ],
+        "answer": "heart\nmind; feeling",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪻꪋ꫁",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[t͡ɕaɰ˧˩ˀ]"
+            }
+        ],
+        "answer": "to serve\nto use\nto have or make",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪻꪐ꪿",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ɲaɰ˦˥]"
+            }
+        ],
+        "answer": "big; large",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪻꪐꫀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ɲaɰ˦˥]"
+            }
+        ],
+        "answer": "big; large",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪻꪚ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[baɰ˨˨]"
+            }
+        ],
+        "answer": "leaf",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪼꪀ꪿",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kaj˦˥]"
+            }
+        ],
+        "answer": "chicken",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪼꪀꫀ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[kaj˦˥]"
+            }
+        ],
+        "answer": "chicken",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪼꪅ꫁",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xaj˧˩ˀ]"
+            }
+        ],
+        "answer": "now, at present, at this time, at the moment",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪼꪕ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[taj˥]"
+            }
+        ],
+        "answer": "Tai (person)\nTai (languages)",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪼꪗ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[tʰaj˥]"
+            }
+        ],
+        "answer": "Thailand",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪼꪜ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[paj˨]"
+            }
+        ],
+        "answer": "to go",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪼꪡ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[faj˥]"
+            }
+        ],
+        "answer": "fire",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪼꪣ꫁",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[maj˧˩ˀ]"
+            }
+        ],
+        "answer": "wood; stick\ntree",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪼꪣꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[maj˧˩ˀ]"
+            }
+        ],
+        "answer": "wood; stick\ntree",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪼꪬ꫁",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[haj˨˩ˀ]"
+            }
+        ],
+        "answer": "to cry",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪼꪬꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[haj˨˩ˀ]"
+            }
+        ],
+        "answer": "to cry",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪼꪮ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[ʔaj˨]"
+            }
+        ],
+        "answer": "to cough",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪵꪒꪙꪒꪲꪙ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[dɛn˨.din˨]"
+            }
+        ],
+        "answer": "boundary",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪵꪚ꪿ꪉꪼꪔ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[bɛŋ˦˥.taj˨]"
+            }
+        ],
+        "answer": "bread",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪄ꫁ꪱꪻꪊ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[xaw˨˩ˀ.t͡ɕaɰ˨]"
+            }
+        ],
+        "answer": "understand",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪣꪉꪡꪱꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[mɨə̯ŋ˥.faː˧˩ˀ]"
+            }
+        ],
+        "answer": "heaven",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪹꪣꪉꪡ꫁ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[mɨə̯ŋ˥.faː˧˩ˀ]"
+            }
+        ],
+        "answer": "heaven",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪻꪚꪼꪣ꫁",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[baɰ˨.maj˧˩ˀ]"
+            }
+        ],
+        "answer": "leaf; foliage",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪻꪚꪼꪣꫂ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[baɰ˨.maj˧˩ˀ]"
+            }
+        ],
+        "answer": "leaf; foliage",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪼꪕꪒꪾ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[taj˥.dam˨]"
+            }
+        ],
+        "answer": "Tai Dam (language)\nTai Dam (people)",
+        "image": "",
+        "audio": ""
+    },
+    {
+        "question": "ꪼꪡꪡ꫁ꪱ",
+        "hints": [
+            {
+                "hintType": "soundIpa",
+                "hint": "[faj˥.faː˧˩ˀ]"
+            }
+        ],
+        "answer": "electricity",
+        "image": "",
+        "audio": ""
+    }
+]

@@ -7,17 +7,20 @@ part of 'flashcard_model.dart';
 // **************************************************************************
 
 Flashcard _$FlashcardFromJson(Map<String, dynamic> json) => Flashcard(
-      flashcardId: (json['flashcardId'] as num).toInt(),
-      image: json['image'] as String,
+      image: json['image'] as String?,
       question: json['question'] as String,
       answer: json['answer'] as String,
       audio: json['audio'] as String?,
+      hints: (json['hints'] as List<dynamic>?)
+              ?.map((e) => Hint.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
     );
 
 Map<String, dynamic> _$FlashcardToJson(Flashcard instance) => <String, dynamic>{
-      'flashcardId': instance.flashcardId,
       'image': instance.image,
       'question': instance.question,
       'answer': instance.answer,
       'audio': instance.audio,
+      'hints': instance.hints?.map((e) => e.toJson()).toList(),
     };
