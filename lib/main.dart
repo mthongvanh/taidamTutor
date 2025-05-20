@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:taidam_tutor/core/data/characters/models/character.dart';
@@ -9,11 +10,15 @@ import 'package:taidam_tutor/feature/quiz/quiz_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
   DependencyManager().registerDependencies();
   final darkText = ThemeData.dark().textTheme;
   runApp(
     MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Tai Dam Tutor',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         textTheme: GoogleFonts.bricolageGrotesqueTextTheme().copyWith(
@@ -126,8 +131,6 @@ class App extends StatelessWidget {
               ),
             ],
             currentIndex: state,
-            // selectedItemColor:
-            //     Theme.of(context).primaryColor, // Or your preferred color
             unselectedItemColor: Colors.grey.shade500,
             onTap: context.read<AppCubit>().onItemTapped,
             showUnselectedLabels: true,
