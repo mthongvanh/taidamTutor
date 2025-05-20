@@ -20,7 +20,9 @@ class TaiError extends StatelessWidget {
           spacing: 16,
           children: [
             Text(
-              'Oops, something went wrong!',
+              errorMessage.isNotEmpty
+                  ? errorMessage
+                  : 'Oops, something went wrong!',
               style: Theme.of(context).textTheme.titleLarge,
               textAlign: TextAlign.center,
             ),

@@ -27,6 +27,6 @@ class CharacterLocalDataSource {
     if (!_isInitialized) {
       await init();
     }
-    return _characters;
+    return _characters.toList();
   }
 }

@@ -1,9 +1,41 @@
 import 'dart:math';
 
+import 'package:taidam_tutor/core/data/characters/character_repository.dart';
 import 'package:taidam_tutor/core/data/characters/models/character.dart';
+import 'package:taidam_tutor/core/data/filter/filter_type.dart';
+import 'package:taidam_tutor/core/di/dependency_manager.dart';
 import 'package:taidam_tutor/feature/quiz/core/data/models/quiz_question.dart';
 
 class CharacterQuizQuestionGenerator {
+  final DependencyManager dm = DependencyManager();
+
+  Future<List<QuizQuestion>> generateQuestions({
+    FilterType filter = FilterType.none,
+    int numberOfOptions = 4,
+  }) async {
+    final characters = dm.get<CharacterRepository>();
+    final allCharacters = await characters.getCharacters();
+    if (filter != FilterType.none) {
+      final filterValue = filter.value.toLowerCase();
+      allCharacters.removeWhere(
+        (character) =>
+            !character.characterClass.toLowerCase().contains(filterValue),
+      );
+    }
+
+    final questions = <QuizQuestion>[];
+    allCharacters.shuffle();
+    for (var character in allCharacters.take(10).toList()) {
+      final question = generateQuestionFromCharacter(
+        character,
+        allCharacters,
+        numberOfOptions: 4,
+      );
+      questions.add(question);
+    }
+    return questions;
+  }
+
   /// Generates a multiple-choice quiz question from a [CharacterModel].
   ///
   /// The question asks to identify the sound of the given character.

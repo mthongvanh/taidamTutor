@@ -1,6 +1,7 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:taidam_tutor/core/data/filter/filter_type.dart';
 import 'package:taidam_tutor/feature/quiz/core/data/models/quiz_question.dart';
 import 'package:taidam_tutor/feature/quiz/cubit/quiz_cubit.dart';
 import 'package:taidam_tutor/feature/quiz/cubit/quiz_state.dart';
@@ -16,55 +17,75 @@ class QuizPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => QuizCubit(),
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text('Quiz'),
-          actions: [
-            BlocBuilder<QuizCubit, QuizState>(
-              builder: (context, state) {
-                if (state is QuizLoaded) {
-                  return IconButton(
-                    icon: Icon(Icons.refresh),
-                    onPressed: () => context.read<QuizCubit>().resetQuiz(),
-                    tooltip: 'Restart Quiz',
-                  );
+      child: Builder(
+        builder: (context) {
+          return Scaffold(
+            appBar: AppBar(
+              leading: PopupMenuButton<String>(
+                icon: const Icon(Icons.filter_list),
+                tooltip: 'Select Filter',
+                onSelected: context.read<QuizCubit>().updateFilter,
+                itemBuilder: (BuildContext context) {
+                  return context
+                      .read<QuizCubit>()
+                      .quizFilters
+                      .map((FilterType filter) {
+                    return PopupMenuItem<String>(
+                      value: filter.name,
+                      child: Text(filter.name),
+                    );
+                  }).toList();
+                },
+              ),
+              title: const Text('Quiz'),
+              actions: [
+                BlocBuilder<QuizCubit, QuizState>(
+                  builder: (context, state) {
+                    if (state is QuizLoaded) {
+                      return IconButton(
+                        icon: Icon(Icons.refresh),
+                        onPressed: () => context.read<QuizCubit>().resetQuiz(),
+                        tooltip: 'Restart Quiz',
+                      );
+                    }
+                    return SizedBox.shrink();
+                  },
+                )
+              ],
+            ),
+            body: BlocConsumer<QuizCubit, QuizState>(
+              listener: (context, state) {
+                if (state is QuizLoaded && state.selectedAnswerIndex != null) {
+                  _showResult(context, isCorrect: state.isCorrect!);
                 }
-                return SizedBox.shrink();
               },
-            )
-          ],
-        ),
-        body: BlocConsumer<QuizCubit, QuizState>(
-          listener: (context, state) {
-            if (state is QuizLoaded && state.selectedAnswerIndex != null) {
-              _showResult(context, isCorrect: state.isCorrect!);
-            }
-          },
-          builder: (context, state) => switch (state) {
-            QuizInitial() || QuizLoading() => const Center(
-                child: CircularProgressIndicator(),
-              ),
-            QuizLoaded() => _QuizLoaded(
-                question: state.currentQuestion,
-                player: player,
-                score: state.score,
-                selectedAnswerIndex: state.selectedAnswerIndex,
-                isCorrect: state.isCorrect,
-              ),
-            QuizFinished() => _QuizFinished(
-                state.score.toString(),
-                state.image,
-              ),
-            QuizError() => TaiError(
-                state.message,
-                onRetry: () => context.read<QuizCubit>().resetQuiz(),
-              ),
-            _ => TaiError(
-                'Unknown error occurred',
-                onRetry: () => context.read<QuizCubit>().resetQuiz(),
-              ),
-          },
-        ),
+              builder: (context, state) => switch (state) {
+                QuizInitial() || QuizLoading() => const Center(
+                    child: CircularProgressIndicator(),
+                  ),
+                QuizLoaded() => _QuizLoaded(
+                    question: state.currentQuestion,
+                    player: player,
+                    score: state.score,
+                    selectedAnswerIndex: state.selectedAnswerIndex,
+                    isCorrect: state.isCorrect,
+                  ),
+                QuizFinished() => _QuizFinished(
+                    state.score.toString(),
+                    state.image,
+                  ),
+                QuizError() => TaiError(
+                    state.message,
+                    onRetry: () => context.read<QuizCubit>().resetQuiz(),
+                  ),
+                _ => TaiError(
+                    'Unknown error occurred',
+                    onRetry: () => context.read<QuizCubit>().resetQuiz(),
+                  ),
+              },
+            ),
+          );
+        }
       ),
     );
   }
