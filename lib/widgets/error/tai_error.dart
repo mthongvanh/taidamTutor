@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:taidam_tutor/utils/extensions/card_ext.dart';
 
 class TaiError extends StatelessWidget {
-  final String errorMessage;
+  final String? errorMessage;
   final VoidCallback? onRetry;
 
-  const TaiError(
-    this.errorMessage, {
+  const TaiError({
+    this.errorMessage,
     this.onRetry,
     super.key,
   });
@@ -20,8 +20,8 @@ class TaiError extends StatelessWidget {
           spacing: 16,
           children: [
             Text(
-              errorMessage.isNotEmpty
-                  ? errorMessage
+              errorMessage?.isNotEmpty == true
+                  ? errorMessage!
                   : 'Oops, something went wrong!',
               style: Theme.of(context).textTheme.titleLarge,
               textAlign: TextAlign.center,

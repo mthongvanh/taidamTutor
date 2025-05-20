@@ -67,14 +67,13 @@ class LetterGrid extends StatelessWidget {
 
             if (state.errorMessage != null) {
               return TaiError(
-                state.errorMessage!,
                 onRetry: () => context.read<LetterSearchCubit>().resetGrid(),
               );
             }
 
             if (state.grid.isEmpty && !state.isLoading) {
               return TaiError(
-                'Grid not initialized. Please ensure parameters are correct and try resetting.',
+                // 'Grid not initialized. Please ensure parameters are correct and try resetting.',
                 onRetry: () => context.read<LetterSearchCubit>().resetGrid(),
               );
             }
@@ -82,7 +81,7 @@ class LetterGrid extends StatelessWidget {
             if (state.grid.isEmpty) {
               // Should be caught by above, but as a fallback
               return TaiError(
-                'No grid to display.',
+                // 'No grid to display.',
                 onRetry: () => context.read<LetterSearchCubit>().resetGrid(),
               );
             }

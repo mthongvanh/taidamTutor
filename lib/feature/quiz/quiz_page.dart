@@ -75,11 +75,11 @@ class QuizPage extends StatelessWidget {
                   state.image,
                 ),
               QuizError() => TaiError(
-                  state.message,
+                  // state.message,
                   onRetry: () => context.read<QuizCubit>().resetQuiz(),
                 ),
               _ => TaiError(
-                  'Unknown error occurred',
+                  // 'Unknown error occurred',
                   onRetry: () => context.read<QuizCubit>().resetQuiz(),
                 ),
             },
