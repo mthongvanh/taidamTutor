@@ -34,16 +34,24 @@ class CharacterFlashcardsCubit extends Cubit<CharacterFlashcardsState> {
         },
       ).toList();
 
-      emit(state.copyWith(
-        status: CharacterFlashcardsStatus.success,
-        flashcards: filteredFlashcards,
-      ));
+      emit(
+        state.copyWith(
+          status: CharacterFlashcardsStatus.success,
+          flashcards: filteredFlashcards,
+          selectedFlashcard:
+              filteredFlashcards.isNotEmpty ? filteredFlashcards.first : null,
+        ),
+      );
     } catch (e) {
       emit(state.copyWith(
         status: CharacterFlashcardsStatus.failure,
         errorMessage: e.toString(),
       ));
     }
+  }
+
+  void selectFlashcard(Flashcard flashcard) {
+    emit(state.copyWith(selectedFlashcard: flashcard));
   }
 }
 
@@ -54,24 +62,33 @@ class CharacterFlashcardsState extends Equatable {
     this.status = CharacterFlashcardsStatus.initial,
     this.flashcards = const <Flashcard>[],
     this.errorMessage,
+    this.selectedFlashcard,
   });
 
   final CharacterFlashcardsStatus status;
   final List<Flashcard> flashcards;
+  final Flashcard? selectedFlashcard;
   final String? errorMessage;
 
   CharacterFlashcardsState copyWith({
     CharacterFlashcardsStatus? status,
     List<Flashcard>? flashcards,
     String? errorMessage,
+    Flashcard? selectedFlashcard,
   }) {
     return CharacterFlashcardsState(
       status: status ?? this.status,
       flashcards: flashcards ?? this.flashcards,
       errorMessage: errorMessage ?? this.errorMessage,
+      selectedFlashcard: selectedFlashcard ?? this.selectedFlashcard,
     );
   }
 
   @override
-  List<Object?> get props => [status, flashcards, errorMessage];
+  List<Object?> get props => [
+        status,
+        flashcards,
+        errorMessage,
+        selectedFlashcard,
+      ];
 }

@@ -40,6 +40,7 @@ class QuizLoaded extends QuizState {
   final int score; // Optional: track score
   final FilterType selectedFilter;
   final List<FilterType> quizFilters;
+  final double progress;
 
   const QuizLoaded({
     required this.currentQuestion,
@@ -48,6 +49,7 @@ class QuizLoaded extends QuizState {
     this.score = 0,
     this.selectedFilter = FilterType.none,
     this.quizFilters = const [],
+    this.progress = 0.0,
   });
 
   QuizLoaded copyWith({
@@ -59,6 +61,7 @@ class QuizLoaded extends QuizState {
     int? score,
     FilterType? selectedFilter,
     List<FilterType>? quizFilters,
+    double? progress,
   }) {
     return QuizLoaded(
       currentQuestion: currentQuestion ?? this.currentQuestion,
@@ -69,6 +72,7 @@ class QuizLoaded extends QuizState {
       score: score ?? this.score,
       selectedFilter: selectedFilter ?? this.selectedFilter,
       quizFilters: quizFilters ?? this.quizFilters,
+      progress: progress ?? this.progress,
     );
   }
 
@@ -80,6 +84,7 @@ class QuizLoaded extends QuizState {
         score,
         selectedFilter,
         quizFilters,
+        progress,
       ];
 }
 

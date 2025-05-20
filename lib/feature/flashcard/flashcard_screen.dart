@@ -1,9 +1,11 @@
 import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:taidam_tutor/core/data/characters/models/character.dart';
 import 'package:taidam_tutor/core/data/flashcards/models/flashcard_model.dart';
 import 'package:taidam_tutor/feature/flashcard/cubit/character_flashcards_cubit.dart';
+import 'package:taidam_tutor/feature/flashcard/widgets/flashcard_details.dart';
 import 'package:taidam_tutor/utils/extensions/card_ext.dart';
 import 'package:taidam_tutor/utils/extensions/text_ext.dart';
 
@@ -35,8 +37,13 @@ class CharacterFlashcardsScreen extends StatelessWidget {
 
 class CharacterFlashcardsView extends StatelessWidget {
   final String characterToHighlight;
-  const CharacterFlashcardsView(
-      {super.key, required this.characterToHighlight});
+
+  final player = AudioPlayer();
+
+  CharacterFlashcardsView({
+    super.key,
+    required this.characterToHighlight,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -68,23 +75,52 @@ class CharacterFlashcardsView extends StatelessWidget {
                 ),
               );
             }
-            return GridView.builder(
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3,
-                childAspectRatio: 1,
-                crossAxisSpacing: 8,
-                mainAxisSpacing: 8,
-              ),
-              itemCount: state.flashcards.length,
-              itemBuilder: (context, index) {
-                final flashcard = state.flashcards[index];
-                return FlashcardItemWidget(
-                  flashcard: flashcard,
-                  characterToHighlight: characterToHighlight,
-                );
-              },
-              padding: const EdgeInsets.all(8),
-            );
+            return LayoutBuilder(builder: (context, constraints) {
+              return Column(
+                mainAxisSize: MainAxisSize.max,
+                spacing: 8,
+                children: [
+                  if (state.selectedFlashcard != null)
+                    SizedBox.square(
+                      dimension:
+                          clampDouble(constraints.maxWidth * 0.3, 250, 300),
+                      child: FlaschardDetails(
+                        state.selectedFlashcard!,
+                        onTap: () {
+                          if (state.selectedFlashcard?.audio?.isNotEmpty ==
+                              true) {
+                            player.play(
+                              AssetSource(
+                                'audio/${state.selectedFlashcard!.audio}.caf',
+                              ),
+                            );
+                          }
+                        },
+                      ),
+                    ),
+                  Expanded(
+                    child: GridView.builder(
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 3,
+                        childAspectRatio: 1,
+                        crossAxisSpacing: 8,
+                        mainAxisSpacing: 8,
+                      ),
+                      itemCount: state.flashcards.length,
+                      itemBuilder: (context, index) {
+                        final flashcard = state.flashcards[index];
+                        return FlashcardItemWidget(
+                          flashcard: flashcard,
+                          characterToHighlight: characterToHighlight,
+                        );
+                      },
+                      padding: const EdgeInsets.all(8),
+                    ),
+                  ),
+                ],
+              );
+            });
         }
       },
     );
@@ -95,9 +131,7 @@ class FlashcardItemWidget extends StatelessWidget {
   final Flashcard flashcard;
   final String characterToHighlight;
 
-  final player = AudioPlayer();
-
-  FlashcardItemWidget({
+  const FlashcardItemWidget({
     super.key,
     required this.flashcard,
     required this.characterToHighlight,
@@ -108,9 +142,7 @@ class FlashcardItemWidget extends StatelessWidget {
     return TaiCard(
       child: InkWell(
         onTap: () {
-          if (flashcard.audio != null && flashcard.audio!.isNotEmpty) {
-            player.play(AssetSource('audio/${flashcard.audio}.caf'));
-          }
+          context.read<CharacterFlashcardsCubit>().selectFlashcard(flashcard);
         },
         child: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -125,7 +157,11 @@ class FlashcardItemWidget extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 8),
-              Text(flashcard.answer),
+              Text(
+                flashcard.answer,
+                maxLines: 2,
+                textAlign: TextAlign.center,
+              ),
             ],
           ),
         ),

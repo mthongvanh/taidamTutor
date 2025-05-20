@@ -109,11 +109,15 @@ class CharacterListView extends StatelessWidget {
                 return _CharacterListCard(
                   character: character,
                   onTap: () {
-                    showModalBottomSheet(
+                    showBottomSheet(
                       context: context,
                       builder: (context) {
-                        return CharacterFlashcardsScreen(
-                          characterModel: character,
+                        return DraggableScrollableSheet(
+                          initialChildSize: 1.0,
+                          builder: (ctx, controller) =>
+                              CharacterFlashcardsScreen(
+                            characterModel: character,
+                          ),
                         );
                       },
                     );

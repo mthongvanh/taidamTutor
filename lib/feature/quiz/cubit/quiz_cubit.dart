@@ -70,6 +70,7 @@ class QuizCubit extends Cubit<QuizState> {
         emit(
           QuizLoaded(
             currentQuestion: _allQuestions[_currentQuestionIndex],
+            progress: _currentQuestionIndex / _allQuestions.length.toDouble(),
             score: _currentScore,
             quizFilters: _quizFilters,
             selectedFilter: filter,
