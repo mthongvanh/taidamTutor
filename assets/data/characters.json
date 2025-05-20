@@ -116,7 +116,7 @@
     "image": "a16",
     "characterType": 1,
     "highLow": "low",
-    "sound": "nh",
+    "sound": "ny",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -127,7 +127,7 @@
     "image": "a17",
     "characterType": 1,
     "highLow": "high",
-    "sound": "'nh",
+    "sound": "'ny",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -314,7 +314,7 @@
     "image": "a34",
     "characterType": 1,
     "highLow": "low",
-    "sound": "y",
+    "sound": "y/z",
     "prePost": "",
     "characterClass": "consonant"
   },
@@ -325,7 +325,7 @@
     "image": "a35",
     "characterType": 1,
     "highLow": "high",
-    "sound": "'y",
+    "sound": "'y/z",
     "prePost": "",
     "characterClass": "consonant"
   },
